@@ -1,2 +1,4 @@
 # Projeto_Final_POO
- Porjeto final de orientação objeto
+ Projeto final da matéria de Programação Orientação a Objetos.
+
+
