@@ -10,4 +10,6 @@ Autores doa projeto: Diego Jonatan de Miranda / Lucas Adati de Paula / Gabriel m
 
 >>>>>>> Stashed changes
 
+Lucas.
+
 
