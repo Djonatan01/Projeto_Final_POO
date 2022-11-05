@@ -32,3 +32,4 @@ C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaP
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.pdb
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.genruntimeconfig.cache
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\ref\AgendaProvas.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJTextBox.resources
