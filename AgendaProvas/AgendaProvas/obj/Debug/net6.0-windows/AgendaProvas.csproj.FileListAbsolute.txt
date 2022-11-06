@@ -33,3 +33,12 @@ C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaP
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.genruntimeconfig.cache
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\ref\AgendaProvas.dll
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJTextBox.resources
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Cadastro.resources
+C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CopyComplete
