@@ -10,11 +10,9 @@ using System.Threading.Tasks;
 namespace AgendaProvas
 {
 
-     class Cadastrar
+     public class Cadastrar
     {
-
-        internal void cadastrar(
-            string nome,string email,string senha,string matricula,
+        public void cadastrar(string nome,string email,string senha,string matricula,
             string tipo ,string periodo,string curso)
         {
             //Abrir conexão com o banco de dados
@@ -22,10 +20,9 @@ namespace AgendaProvas
 
             try
             {
-
-                string sql = "INSERT INTO usuarios (`id`,`nome`, `email`, `senha`, `matricula`, `tipo`," +
+                string sql = "INSERT INTO usuarios (`nome`, `email`, `senha`, `matricula`, `tipo`," +
                 " `periodo`, `curso`)" +
-                " VALUES (null,?,?,?,?,?,?,?)";
+                " VALUES (?,?,?,?,?,?,?)";
 
                 MySqlCommand comnado = new MySqlCommand(sql, Conn.conexao);
 
@@ -45,7 +42,7 @@ namespace AgendaProvas
             } 
             catch (Exception ex)
             {
-                MessageBox.Show("Falha: " + ex.Message);
+                MessageBox.Show("Erro de cadastro entrar em contato com o Admin ", "Erro de cadastro",MessageBoxButtons.OK,MessageBoxIcon.Error );
             }
 
         }

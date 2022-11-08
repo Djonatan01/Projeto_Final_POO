@@ -39,6 +39,7 @@
             this.btConsultar = new AgendaProvas.RJButton();
             this.btExcluir = new AgendaProvas.RJButton();
             this.btAlterar = new AgendaProvas.RJButton();
+            this.txtTipo = new CustomControls.RJControls.RJTextBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -124,7 +125,7 @@
             this.txtMatricula.BorderSize = 2;
             this.txtMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMatricula.ForeColor = System.Drawing.Color.White;
-            this.txtMatricula.Location = new System.Drawing.Point(13, 222);
+            this.txtMatricula.Location = new System.Drawing.Point(13, 206);
             this.txtMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatricula.Multiline = false;
             this.txtMatricula.Name = "txtMatricula";
@@ -146,7 +147,7 @@
             this.txtCurso.BorderSize = 2;
             this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCurso.ForeColor = System.Drawing.Color.White;
-            this.txtCurso.Location = new System.Drawing.Point(13, 330);
+            this.txtCurso.Location = new System.Drawing.Point(13, 348);
             this.txtCurso.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurso.Multiline = false;
             this.txtCurso.Name = "txtCurso";
@@ -168,7 +169,7 @@
             this.txtPeriodo.BorderSize = 2;
             this.txtPeriodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPeriodo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo.Location = new System.Drawing.Point(13, 279);
+            this.txtPeriodo.Location = new System.Drawing.Point(13, 299);
             this.txtPeriodo.Margin = new System.Windows.Forms.Padding(4);
             this.txtPeriodo.Multiline = false;
             this.txtPeriodo.Name = "txtPeriodo";
@@ -192,7 +193,7 @@
             this.btcadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcadastrar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btcadastrar.ForeColor = System.Drawing.Color.White;
-            this.btcadastrar.Location = new System.Drawing.Point(13, 383);
+            this.btcadastrar.Location = new System.Drawing.Point(9, 447);
             this.btcadastrar.Name = "btcadastrar";
             this.btcadastrar.Size = new System.Drawing.Size(100, 30);
             this.btcadastrar.TabIndex = 7;
@@ -212,7 +213,7 @@
             this.btConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btConsultar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btConsultar.ForeColor = System.Drawing.Color.White;
-            this.btConsultar.Location = new System.Drawing.Point(119, 383);
+            this.btConsultar.Location = new System.Drawing.Point(115, 447);
             this.btConsultar.Name = "btConsultar";
             this.btConsultar.Size = new System.Drawing.Size(100, 30);
             this.btConsultar.TabIndex = 8;
@@ -231,7 +232,7 @@
             this.btExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btExcluir.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btExcluir.ForeColor = System.Drawing.Color.White;
-            this.btExcluir.Location = new System.Drawing.Point(225, 383);
+            this.btExcluir.Location = new System.Drawing.Point(221, 447);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(100, 30);
             this.btExcluir.TabIndex = 9;
@@ -250,7 +251,7 @@
             this.btAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btAlterar.ForeColor = System.Drawing.Color.White;
-            this.btAlterar.Location = new System.Drawing.Point(331, 383);
+            this.btAlterar.Location = new System.Drawing.Point(327, 447);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(100, 30);
             this.btAlterar.TabIndex = 10;
@@ -258,17 +259,40 @@
             this.btAlterar.TextColor = System.Drawing.Color.White;
             this.btAlterar.UseVisualStyleBackColor = false;
             // 
+            // txtTipo
+            // 
+            this.txtTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtTipo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtTipo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtTipo.BorderRadius = 10;
+            this.txtTipo.BorderSize = 2;
+            this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTipo.ForeColor = System.Drawing.Color.White;
+            this.txtTipo.Location = new System.Drawing.Point(13, 251);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipo.Multiline = false;
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtTipo.PasswordChar = false;
+            this.txtTipo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtTipo.PlaceholderText = "Tipo:";
+            this.txtTipo.Size = new System.Drawing.Size(250, 31);
+            this.txtTipo.TabIndex = 6;
+            this.txtTipo.Texts = "";
+            this.txtTipo.UnderlinedStyle = false;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(484, 461);
+            this.ClientSize = new System.Drawing.Size(484, 517);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btConsultar);
             this.Controls.Add(this.btcadastrar);
             this.Controls.Add(this.txtPeriodo);
+            this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.txtCurso);
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.txtSenha);
@@ -295,5 +319,6 @@
         private RJButton btConsultar;
         private RJButton btExcluir;
         private RJButton btAlterar;
+        private CustomControls.RJControls.RJTextBox txtTipo;
     }
 }

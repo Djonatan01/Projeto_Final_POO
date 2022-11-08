@@ -19,10 +19,9 @@ namespace AgendaProvas
         }
         private void btcadastrar_Click(object sender, EventArgs e)
         {
-            Conn.conectar();
-            Cadastrar formCadastrar = new Cadastrar();
+            Cadastrar formCadastrar1 = new Cadastrar();
 
-            formCadastrar.cadastro(string nome, string email, string senha, string matricula, string tipo, string periodo, string curso);
+            formCadastrar1.cadastrar(txtNome.Texts,txtEmail.Texts,txtSenha.Texts,txtMatricula.Texts,txtTipo.Texts,txtPeriodo.Texts,txtCurso.Texts);
 
         }
     }

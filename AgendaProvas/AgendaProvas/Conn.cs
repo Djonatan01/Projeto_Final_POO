@@ -12,7 +12,6 @@ namespace AgendaProvas
     {
         //Comnando responsavel pela conexao com o banco de dados 
         public static MySqlConnection conexao;
-
         //Função responsavel pela instruções  a serem executadas
         public static MySqlCommand Comando;
         //Adapter é responsavel por inserir dados em uma datatable
@@ -25,7 +24,7 @@ namespace AgendaProvas
             try
             {
                 // Criando a conexão com o banco de dados
-                conexao = new MySqlConnection("server=localhost;uid=root;pwd=");
+                conexao = new MySqlConnection("server=localhost;uid=root;pwd=;database=bdprovas");
 
                 conexao.Open();
 
