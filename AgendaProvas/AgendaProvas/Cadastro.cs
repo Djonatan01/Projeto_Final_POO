@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace AgendaProvas
 {
@@ -18,9 +19,11 @@ namespace AgendaProvas
         }
         private void btcadastrar_Click(object sender, EventArgs e)
         {
-            ConexaoBanco formCadastrar = new ConexaoBanco();
-            formCadastrar.cadastrar(txtNome.Texts, txtEmail.Texts, txtSenha.Texts, txtMatricula.Texts,
-                txtPeriodo.Texts,txtCurso.Texts);
+            Conn.conectar();
+            Cadastrar formCadastrar = new Cadastrar();
+
+            formCadastrar.cadastro(string nome, string email, string senha, string matricula, string tipo, string periodo, string curso);
+
         }
     }
 }
