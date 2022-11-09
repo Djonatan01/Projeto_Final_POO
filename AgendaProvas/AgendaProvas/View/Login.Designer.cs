@@ -30,7 +30,7 @@
         {
             this.btLogar = new AgendaProvas.RJButton();
             this.txtEmailLogin = new CustomControls.RJControls.RJTextBox();
-            this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            this.txtSenhaLogin = new CustomControls.RJControls.RJTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
@@ -51,6 +51,7 @@
             this.btLogar.Text = "Logar";
             this.btLogar.TextColor = System.Drawing.Color.White;
             this.btLogar.UseVisualStyleBackColor = false;
+            this.btLogar.Click += new System.EventHandler(this.btLogar_Click);
             // 
             // txtEmailLogin
             // 
@@ -74,27 +75,27 @@
             this.txtEmailLogin.Texts = "";
             this.txtEmailLogin.UnderlinedStyle = false;
             // 
-            // rjTextBox1
+            // txtSenhaLogin
             // 
-            this.rjTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox1.BorderRadius = 10;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(16, 157);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = true;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox1.PlaceholderText = "Senha:";
-            this.rjTextBox1.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox1.TabIndex = 4;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.txtSenhaLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtSenhaLogin.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtSenhaLogin.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSenhaLogin.BorderRadius = 10;
+            this.txtSenhaLogin.BorderSize = 2;
+            this.txtSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSenhaLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSenhaLogin.Location = new System.Drawing.Point(16, 157);
+            this.txtSenhaLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSenhaLogin.Multiline = false;
+            this.txtSenhaLogin.Name = "txtSenhaLogin";
+            this.txtSenhaLogin.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSenhaLogin.PasswordChar = true;
+            this.txtSenhaLogin.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSenhaLogin.PlaceholderText = "Senha:";
+            this.txtSenhaLogin.Size = new System.Drawing.Size(250, 31);
+            this.txtSenhaLogin.TabIndex = 4;
+            this.txtSenhaLogin.Texts = "";
+            this.txtSenhaLogin.UnderlinedStyle = false;
             // 
             // panel1
             // 
@@ -110,7 +111,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(277, 261);
-            this.Controls.Add(this.rjTextBox1);
+            this.Controls.Add(this.txtSenhaLogin);
             this.Controls.Add(this.txtEmailLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btLogar);
@@ -120,7 +121,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
 
         }
@@ -130,5 +130,6 @@
         private CustomControls.RJControls.RJTextBox txtEmailLogin;
         private CustomControls.RJControls.RJTextBox rjTextBox1;
         private Panel panel1;
+        private CustomControls.RJControls.RJTextBox txtSenhaLogin;
     }
 }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace AgendaProvas
+namespace AgendaProvas.Dao
 {
     class Conn
     {
@@ -28,11 +28,12 @@ namespace AgendaProvas
 
                 conexao.Open();
 
-                MessageBox.Show("Sistema OK");
+                MessageBox.Show("Sistema OK","Sistema conectado com banco",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            catch(Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show("Falha"+ ex.Message);
+                MessageBox.Show("Falha na conexão com banco de dados\n" +
+                    "Contactar o administrador", "Conexão com banco de dados",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
     }

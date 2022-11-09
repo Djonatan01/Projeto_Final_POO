@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using AgendaProvas.Dao;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -9,8 +10,7 @@ using System.Threading.Tasks;
 
 namespace AgendaProvas
 {
-
-     public class Cadastrar
+    public class Cadastrar
     {
         public void cadastrar(string nome,string email,string senha,string matricula,
             string tipo ,string periodo,string curso)
