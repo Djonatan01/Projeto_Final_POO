@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace AgendaProvas
 {
     public partial class Login : Form
@@ -17,9 +19,10 @@ namespace AgendaProvas
                 }
                 else
                 {
-                    bool verificarLogin;
-                    Consulta loginConsulta = new Consulta();
-                    loginConsulta.consultar(txtEmailLogin.Texts,txtSenhaLogin.Texts);
+                    ArrayList verificarLogin = new ArrayList();
+                    //Consulta loginConsulta = new Consulta();
+                    //loginConsulta.consultar(txtEmailLogin.Texts, txtSenhaLogin.Texts);
+                    //verificarLogin = loginConsulta.consultar(txtEmailLogin.Texts,txtSenhaLogin.Texts);
                 }
             }
             catch
