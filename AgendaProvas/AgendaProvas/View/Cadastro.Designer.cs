@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "01", System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64))))), new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "14253698", System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64))))), new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "Diego Jonatan de Miranda"),
+            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "")}, -1);
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtNome = new CustomControls.RJControls.RJTextBox();
             this.txtEmail = new CustomControls.RJControls.RJTextBox();
@@ -40,19 +45,30 @@
             this.btExcluir = new AgendaProvas.RJButton();
             this.btAlterar = new AgendaProvas.RJButton();
             this.txtTipo = new CustomControls.RJControls.RJTextBox();
-            this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            this.txtId = new CustomControls.RJControls.RJTextBox();
             this.mnOpcao = new System.Windows.Forms.MenuStrip();
             this.menuCadastrar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultar = new System.Windows.Forms.ToolStripMenuItem();
+            this.lsView = new System.Windows.Forms.ListView();
+            this.col_Id = new System.Windows.Forms.ColumnHeader();
+            this.col_matricula = new System.Windows.Forms.ColumnHeader();
+            this.col_nome = new System.Windows.Forms.ColumnHeader();
+            this.col_email = new System.Windows.Forms.ColumnHeader();
+            this.col_curso = new System.Windows.Forms.ColumnHeader();
+            this.col_periodo = new System.Windows.Forms.ColumnHeader();
+            this.col_nivelAcesso = new System.Windows.Forms.ColumnHeader();
+            this.col_senha = new System.Windows.Forms.ColumnHeader();
             this.mnOpcao.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(0, 23);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 42);
+            this.panel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
+            this.panel1.Size = new System.Drawing.Size(579, 42);
             this.panel1.TabIndex = 0;
             // 
             // txtNome
@@ -64,7 +80,7 @@
             this.txtNome.BorderSize = 2;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNome.ForeColor = System.Drawing.Color.White;
-            this.txtNome.Location = new System.Drawing.Point(13, 89);
+            this.txtNome.Location = new System.Drawing.Point(13, 172);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Multiline = false;
             this.txtNome.Name = "txtNome";
@@ -73,7 +89,7 @@
             this.txtNome.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNome.PlaceholderText = "Nome:";
             this.txtNome.Size = new System.Drawing.Size(250, 31);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 2;
             this.txtNome.Texts = "";
             this.txtNome.UnderlinedStyle = false;
             // 
@@ -86,7 +102,7 @@
             this.txtEmail.BorderSize = 2;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(13, 138);
+            this.txtEmail.Location = new System.Drawing.Point(13, 211);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
@@ -108,7 +124,7 @@
             this.txtSenha.BorderSize = 2;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtSenha.ForeColor = System.Drawing.Color.White;
-            this.txtSenha.Location = new System.Drawing.Point(13, 191);
+            this.txtSenha.Location = new System.Drawing.Point(13, 250);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Multiline = false;
             this.txtSenha.Name = "txtSenha";
@@ -130,7 +146,7 @@
             this.txtMatricula.BorderSize = 2;
             this.txtMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMatricula.ForeColor = System.Drawing.Color.White;
-            this.txtMatricula.Location = new System.Drawing.Point(13, 233);
+            this.txtMatricula.Location = new System.Drawing.Point(13, 133);
             this.txtMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatricula.Multiline = false;
             this.txtMatricula.Name = "txtMatricula";
@@ -139,7 +155,7 @@
             this.txtMatricula.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtMatricula.PlaceholderText = "Matricula:";
             this.txtMatricula.Size = new System.Drawing.Size(250, 31);
-            this.txtMatricula.TabIndex = 4;
+            this.txtMatricula.TabIndex = 1;
             this.txtMatricula.Texts = "";
             this.txtMatricula.UnderlinedStyle = false;
             // 
@@ -152,7 +168,7 @@
             this.txtCurso.BorderSize = 2;
             this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCurso.ForeColor = System.Drawing.Color.White;
-            this.txtCurso.Location = new System.Drawing.Point(13, 375);
+            this.txtCurso.Location = new System.Drawing.Point(13, 367);
             this.txtCurso.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurso.Multiline = false;
             this.txtCurso.Name = "txtCurso";
@@ -161,7 +177,7 @@
             this.txtCurso.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCurso.PlaceholderText = "Curso:";
             this.txtCurso.Size = new System.Drawing.Size(250, 31);
-            this.txtCurso.TabIndex = 6;
+            this.txtCurso.TabIndex = 7;
             this.txtCurso.Texts = "";
             this.txtCurso.UnderlinedStyle = false;
             // 
@@ -174,7 +190,7 @@
             this.txtPeriodo.BorderSize = 2;
             this.txtPeriodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPeriodo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo.Location = new System.Drawing.Point(13, 326);
+            this.txtPeriodo.Location = new System.Drawing.Point(13, 328);
             this.txtPeriodo.Margin = new System.Windows.Forms.Padding(4);
             this.txtPeriodo.Multiline = false;
             this.txtPeriodo.Name = "txtPeriodo";
@@ -183,7 +199,7 @@
             this.txtPeriodo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPeriodo.PlaceholderText = "Período:";
             this.txtPeriodo.Size = new System.Drawing.Size(250, 31);
-            this.txtPeriodo.TabIndex = 5;
+            this.txtPeriodo.TabIndex = 6;
             this.txtPeriodo.Texts = "";
             this.txtPeriodo.UnderlinedStyle = false;
             // 
@@ -218,7 +234,7 @@
             this.btConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btConsultar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btConsultar.ForeColor = System.Drawing.Color.White;
-            this.btConsultar.Location = new System.Drawing.Point(270, 90);
+            this.btConsultar.Location = new System.Drawing.Point(287, 151);
             this.btConsultar.Name = "btConsultar";
             this.btConsultar.Size = new System.Drawing.Size(100, 30);
             this.btConsultar.TabIndex = 8;
@@ -275,50 +291,50 @@
             this.txtTipo.BorderSize = 2;
             this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTipo.ForeColor = System.Drawing.Color.White;
-            this.txtTipo.Location = new System.Drawing.Point(13, 278);
+            this.txtTipo.Location = new System.Drawing.Point(13, 289);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Multiline = false;
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtTipo.PasswordChar = false;
             this.txtTipo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTipo.PlaceholderText = "Tipo:";
+            this.txtTipo.PlaceholderText = "Nivel de acesso:";
             this.txtTipo.Size = new System.Drawing.Size(250, 31);
-            this.txtTipo.TabIndex = 6;
+            this.txtTipo.TabIndex = 5;
             this.txtTipo.Texts = "";
             this.txtTipo.UnderlinedStyle = false;
             // 
-            // rjTextBox1
+            // txtId
             // 
-            this.rjTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox1.BorderRadius = 10;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Enabled = false;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox1.ForeColor = System.Drawing.Color.White;
-            this.rjTextBox1.Location = new System.Drawing.Point(13, 424);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox1.PlaceholderText = "Id:";
-            this.rjTextBox1.Size = new System.Drawing.Size(78, 31);
-            this.rjTextBox1.TabIndex = 1;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtId.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtId.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtId.BorderRadius = 10;
+            this.txtId.BorderSize = 2;
+            this.txtId.Enabled = false;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtId.ForeColor = System.Drawing.Color.White;
+            this.txtId.Location = new System.Drawing.Point(13, 90);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtId.Multiline = false;
+            this.txtId.Name = "txtId";
+            this.txtId.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtId.PasswordChar = false;
+            this.txtId.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtId.PlaceholderText = "Id:";
+            this.txtId.Size = new System.Drawing.Size(78, 31);
+            this.txtId.TabIndex = 8;
+            this.txtId.Texts = "";
+            this.txtId.UnderlinedStyle = false;
             // 
             // mnOpcao
             // 
             this.mnOpcao.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCadastrar,
             this.menuConsultar});
-            this.mnOpcao.Location = new System.Drawing.Point(0, 0);
+            this.mnOpcao.Location = new System.Drawing.Point(0, 42);
             this.mnOpcao.Name = "mnOpcao";
-            this.mnOpcao.Size = new System.Drawing.Size(484, 24);
+            this.mnOpcao.Size = new System.Drawing.Size(579, 24);
             this.mnOpcao.TabIndex = 11;
             this.mnOpcao.Text = "Opção";
             // 
@@ -334,13 +350,78 @@
             this.menuConsultar.Name = "menuConsultar";
             this.menuConsultar.Size = new System.Drawing.Size(70, 20);
             this.menuConsultar.Text = "Consultar";
+            this.menuConsultar.Click += new System.EventHandler(this.menuConsultar_Click);
+            // 
+            // lsView
+            // 
+            this.lsView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lsView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lsView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.col_Id,
+            this.col_matricula,
+            this.col_nome,
+            this.col_email,
+            this.col_curso,
+            this.col_periodo,
+            this.col_nivelAcesso,
+            this.col_senha});
+            this.lsView.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lsView.ForeColor = System.Drawing.Color.White;
+            this.lsView.FullRowSelect = true;
+            this.lsView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.lsView.Location = new System.Drawing.Point(9, 211);
+            this.lsView.Margin = new System.Windows.Forms.Padding(50, 3, 3, 3);
+            this.lsView.MultiSelect = false;
+            this.lsView.Name = "lsView";
+            this.lsView.Size = new System.Drawing.Size(565, 200);
+            this.lsView.TabIndex = 12;
+            this.lsView.UseCompatibleStateImageBehavior = false;
+            this.lsView.View = System.Windows.Forms.View.Details;
+            // 
+            // col_Id
+            // 
+            this.col_Id.Text = "ID:";
+            this.col_Id.Width = 40;
+            // 
+            // col_matricula
+            // 
+            this.col_matricula.Text = "Matricula:";
+            this.col_matricula.Width = 80;
+            // 
+            // col_nome
+            // 
+            this.col_nome.Text = "Nome:";
+            this.col_nome.Width = 200;
+            // 
+            // col_email
+            // 
+            this.col_email.Text = "E-mail:";
+            // 
+            // col_curso
+            // 
+            this.col_curso.Text = "Curso:";
+            // 
+            // col_periodo
+            // 
+            this.col_periodo.Text = "Período:";
+            // 
+            // col_nivelAcesso
+            // 
+            this.col_nivelAcesso.Text = "Nível de acesso:";
+            // 
+            // col_senha
+            // 
+            this.col_senha.Text = "Senha:";
+            this.col_senha.Width = 1;
             // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(484, 517);
+            this.ClientSize = new System.Drawing.Size(579, 517);
+            this.Controls.Add(this.lsView);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btConsultar);
@@ -351,11 +432,12 @@
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.rjTextBox1);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.mnOpcao);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.mnOpcao;
+            this.MaximizeBox = false;
             this.Name = "Cadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
@@ -380,9 +462,18 @@
         private RJButton btExcluir;
         private RJButton btAlterar;
         private CustomControls.RJControls.RJTextBox txtTipo;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CustomControls.RJControls.RJTextBox txtId;
         private MenuStrip mnOpcao;
         private ToolStripMenuItem menuCadastrar;
         private ToolStripMenuItem menuConsultar;
+        private ListView lsView;
+        private ColumnHeader col_Id;
+        private ColumnHeader col_matricula;
+        private ColumnHeader col_nome;
+        private ColumnHeader col_email;
+        private ColumnHeader col_curso;
+        private ColumnHeader col_periodo;
+        private ColumnHeader col_nivelAcesso;
+        private ColumnHeader col_senha;
     }
 }

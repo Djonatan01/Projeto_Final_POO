@@ -898,11 +898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
+      "projectUniqueName": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
       "projectName": "AgendaProvas",
-      "projectPath": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
+      "projectPath": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
       "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\diego\\OneDrive\\Documentos\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\obj\\",
+      "outputPath": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
