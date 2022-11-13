@@ -17,18 +17,16 @@ namespace AgendaProvas.Model
         private string periodo;
         private string curso;
 
-        public Usuario()
-        {
+        public Usuario() { }
 
-        }
-
-        public int Id { get => id; set => id = value; }
-        public string Nome { get => nome; set => nome = value; }
-        public string Email { get => email; set => email = value; }
-        public string Senha { get => senha; set => senha = value; }
-        public int Matricula { get => matricula; set => matricula = value; }
-        public string Tipo { get => tipo; set => tipo = value; }
-        public string Periodo { get => periodo; set => periodo = value; }
-        public string Curso { get => curso; set => curso = value; }
+        public int Id { get ; set; }
+        public string Nome { get; set; }
+        public string Email { get; set; }
+        public string Senha { get; set; }
+        public int Matricula { get; set; }
+        public string Tipo { get ; set; }
+        public string Periodo { get; set; }
+        public string Curso { get; set; }
+        
     }
 }
