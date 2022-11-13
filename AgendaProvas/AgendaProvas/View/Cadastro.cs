@@ -18,7 +18,6 @@ namespace AgendaProvas
         public Cadastro()
         {
             InitializeComponent();
-            menuCadastrar_Click();
         }
         private void btcadastrar_Click(object sender, EventArgs e)
         {
@@ -60,23 +59,7 @@ namespace AgendaProvas
 
         private void menuCadastrar_Click(object sender, EventArgs e)
         {
-            menuCadastrar_Click();
-        }
-        public void menuCadastrar_Click()
-        {
-            // Visualizar os campos
-            txtId.Visible = true;
-            btConsultar.Visible = false;
-            txtId.Enabled = false;
-            lsView.Visible = false;
-        }
-        private void menuConsultar_Click(object sender, EventArgs e)
-        {
-            // Ocultar os campos
-            txtId.Visible = false;
-            lsView.Visible = true;
-            btConsultar.Visible = true;
-        }
 
+        }
     }
 }
