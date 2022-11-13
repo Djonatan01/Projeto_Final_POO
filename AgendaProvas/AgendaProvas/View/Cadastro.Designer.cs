@@ -40,19 +40,23 @@
             this.btExcluir = new AgendaProvas.RJButton();
             this.btAlterar = new AgendaProvas.RJButton();
             this.txtTipo = new CustomControls.RJControls.RJTextBox();
-            this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
+            this.txtId = new CustomControls.RJControls.RJTextBox();
             this.mnOpcao = new System.Windows.Forms.MenuStrip();
             this.menuCadastrar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultar = new System.Windows.Forms.ToolStripMenuItem();
+            this.dgUsuario = new System.Windows.Forms.DataGridView();
             this.mnOpcao.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(0, 23);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 42);
+            this.panel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
+            this.panel1.Size = new System.Drawing.Size(875, 42);
             this.panel1.TabIndex = 0;
             // 
             // txtNome
@@ -64,7 +68,7 @@
             this.txtNome.BorderSize = 2;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNome.ForeColor = System.Drawing.Color.White;
-            this.txtNome.Location = new System.Drawing.Point(13, 89);
+            this.txtNome.Location = new System.Drawing.Point(13, 172);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Multiline = false;
             this.txtNome.Name = "txtNome";
@@ -73,7 +77,8 @@
             this.txtNome.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNome.PlaceholderText = "Nome:";
             this.txtNome.Size = new System.Drawing.Size(250, 31);
-            this.txtNome.TabIndex = 1;
+            this.txtNome.TabIndex = 3;
+            this.txtNome.TabStop = false;
             this.txtNome.Texts = "";
             this.txtNome.UnderlinedStyle = false;
             // 
@@ -86,7 +91,7 @@
             this.txtEmail.BorderSize = 2;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(13, 138);
+            this.txtEmail.Location = new System.Drawing.Point(13, 211);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
@@ -95,7 +100,8 @@
             this.txtEmail.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtEmail.PlaceholderText = "E-mail:";
             this.txtEmail.Size = new System.Drawing.Size(250, 31);
-            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TabIndex = 4;
+            this.txtEmail.TabStop = false;
             this.txtEmail.Texts = "";
             this.txtEmail.UnderlinedStyle = false;
             // 
@@ -108,7 +114,7 @@
             this.txtSenha.BorderSize = 2;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtSenha.ForeColor = System.Drawing.Color.White;
-            this.txtSenha.Location = new System.Drawing.Point(13, 191);
+            this.txtSenha.Location = new System.Drawing.Point(13, 250);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Multiline = false;
             this.txtSenha.Name = "txtSenha";
@@ -117,12 +123,14 @@
             this.txtSenha.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSenha.PlaceholderText = "Senha:";
             this.txtSenha.Size = new System.Drawing.Size(250, 31);
-            this.txtSenha.TabIndex = 3;
+            this.txtSenha.TabIndex = 5;
+            this.txtSenha.TabStop = false;
             this.txtSenha.Texts = "";
             this.txtSenha.UnderlinedStyle = false;
             // 
             // txtMatricula
             // 
+            this.txtMatricula.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.txtMatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.txtMatricula.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.txtMatricula.BorderFocusColor = System.Drawing.Color.HotPink;
@@ -130,16 +138,17 @@
             this.txtMatricula.BorderSize = 2;
             this.txtMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMatricula.ForeColor = System.Drawing.Color.White;
-            this.txtMatricula.Location = new System.Drawing.Point(13, 233);
+            this.txtMatricula.Location = new System.Drawing.Point(13, 133);
             this.txtMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatricula.Multiline = false;
             this.txtMatricula.Name = "txtMatricula";
             this.txtMatricula.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtMatricula.PasswordChar = false;
             this.txtMatricula.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtMatricula.PlaceholderText = "Matricula:";
+            this.txtMatricula.PlaceholderText = "Matricula";
             this.txtMatricula.Size = new System.Drawing.Size(250, 31);
-            this.txtMatricula.TabIndex = 4;
+            this.txtMatricula.TabIndex = 2;
+            this.txtMatricula.TabStop = false;
             this.txtMatricula.Texts = "";
             this.txtMatricula.UnderlinedStyle = false;
             // 
@@ -152,7 +161,7 @@
             this.txtCurso.BorderSize = 2;
             this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCurso.ForeColor = System.Drawing.Color.White;
-            this.txtCurso.Location = new System.Drawing.Point(13, 375);
+            this.txtCurso.Location = new System.Drawing.Point(13, 367);
             this.txtCurso.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurso.Multiline = false;
             this.txtCurso.Name = "txtCurso";
@@ -161,7 +170,8 @@
             this.txtCurso.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtCurso.PlaceholderText = "Curso:";
             this.txtCurso.Size = new System.Drawing.Size(250, 31);
-            this.txtCurso.TabIndex = 6;
+            this.txtCurso.TabIndex = 8;
+            this.txtCurso.TabStop = false;
             this.txtCurso.Texts = "";
             this.txtCurso.UnderlinedStyle = false;
             // 
@@ -174,7 +184,7 @@
             this.txtPeriodo.BorderSize = 2;
             this.txtPeriodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPeriodo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo.Location = new System.Drawing.Point(13, 326);
+            this.txtPeriodo.Location = new System.Drawing.Point(13, 328);
             this.txtPeriodo.Margin = new System.Windows.Forms.Padding(4);
             this.txtPeriodo.Multiline = false;
             this.txtPeriodo.Name = "txtPeriodo";
@@ -183,7 +193,8 @@
             this.txtPeriodo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtPeriodo.PlaceholderText = "Período:";
             this.txtPeriodo.Size = new System.Drawing.Size(250, 31);
-            this.txtPeriodo.TabIndex = 5;
+            this.txtPeriodo.TabIndex = 7;
+            this.txtPeriodo.TabStop = false;
             this.txtPeriodo.Texts = "";
             this.txtPeriodo.UnderlinedStyle = false;
             // 
@@ -218,7 +229,7 @@
             this.btConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btConsultar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btConsultar.ForeColor = System.Drawing.Color.White;
-            this.btConsultar.Location = new System.Drawing.Point(270, 90);
+            this.btConsultar.Location = new System.Drawing.Point(287, 151);
             this.btConsultar.Name = "btConsultar";
             this.btConsultar.Size = new System.Drawing.Size(100, 30);
             this.btConsultar.TabIndex = 8;
@@ -245,6 +256,7 @@
             this.btExcluir.Text = "Excluir";
             this.btExcluir.TextColor = System.Drawing.Color.White;
             this.btExcluir.UseVisualStyleBackColor = false;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btAlterar
             // 
@@ -275,50 +287,51 @@
             this.txtTipo.BorderSize = 2;
             this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTipo.ForeColor = System.Drawing.Color.White;
-            this.txtTipo.Location = new System.Drawing.Point(13, 278);
+            this.txtTipo.Location = new System.Drawing.Point(13, 289);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Multiline = false;
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtTipo.PasswordChar = false;
             this.txtTipo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtTipo.PlaceholderText = "Tipo:";
+            this.txtTipo.PlaceholderText = "Nivel de acesso:";
             this.txtTipo.Size = new System.Drawing.Size(250, 31);
             this.txtTipo.TabIndex = 6;
+            this.txtTipo.TabStop = false;
             this.txtTipo.Texts = "";
             this.txtTipo.UnderlinedStyle = false;
             // 
-            // rjTextBox1
+            // txtId
             // 
-            this.rjTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox1.BorderRadius = 10;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Enabled = false;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox1.ForeColor = System.Drawing.Color.White;
-            this.rjTextBox1.Location = new System.Drawing.Point(13, 424);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox1.PlaceholderText = "Id:";
-            this.rjTextBox1.Size = new System.Drawing.Size(78, 31);
-            this.rjTextBox1.TabIndex = 1;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
+            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtId.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtId.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtId.BorderRadius = 10;
+            this.txtId.BorderSize = 2;
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtId.ForeColor = System.Drawing.Color.White;
+            this.txtId.Location = new System.Drawing.Point(13, 90);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtId.Multiline = false;
+            this.txtId.Name = "txtId";
+            this.txtId.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtId.PasswordChar = false;
+            this.txtId.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtId.PlaceholderText = "Id:";
+            this.txtId.Size = new System.Drawing.Size(78, 31);
+            this.txtId.TabIndex = 1;
+            this.txtId.TabStop = false;
+            this.txtId.Texts = "";
+            this.txtId.UnderlinedStyle = false;
             // 
             // mnOpcao
             // 
             this.mnOpcao.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCadastrar,
             this.menuConsultar});
-            this.mnOpcao.Location = new System.Drawing.Point(0, 0);
+            this.mnOpcao.Location = new System.Drawing.Point(0, 42);
             this.mnOpcao.Name = "mnOpcao";
-            this.mnOpcao.Size = new System.Drawing.Size(484, 24);
+            this.mnOpcao.Size = new System.Drawing.Size(875, 24);
             this.mnOpcao.TabIndex = 11;
             this.mnOpcao.Text = "Opção";
             // 
@@ -334,13 +347,25 @@
             this.menuConsultar.Name = "menuConsultar";
             this.menuConsultar.Size = new System.Drawing.Size(70, 20);
             this.menuConsultar.Text = "Consultar";
+            this.menuConsultar.Click += new System.EventHandler(this.menuConsultar_Click);
+            // 
+            // dgUsuario
+            // 
+            this.dgUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgUsuario.Location = new System.Drawing.Point(13, 210);
+            this.dgUsuario.Name = "dgUsuario";
+            this.dgUsuario.RowTemplate.Height = 25;
+            this.dgUsuario.Size = new System.Drawing.Size(850, 236);
+            this.dgUsuario.TabIndex = 13;
+            this.dgUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUsuario_CellClick);
             // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(484, 517);
+            this.ClientSize = new System.Drawing.Size(875, 517);
+            this.Controls.Add(this.dgUsuario);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btConsultar);
@@ -351,16 +376,19 @@
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.rjTextBox1);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.mnOpcao);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.mnOpcao;
+            this.MaximizeBox = false;
             this.Name = "Cadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
+            this.Load += new System.EventHandler(this.Cadastro_Load);
             this.mnOpcao.ResumeLayout(false);
             this.mnOpcao.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,9 +408,10 @@
         private RJButton btExcluir;
         private RJButton btAlterar;
         private CustomControls.RJControls.RJTextBox txtTipo;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CustomControls.RJControls.RJTextBox txtId;
         private MenuStrip mnOpcao;
         private ToolStripMenuItem menuCadastrar;
         private ToolStripMenuItem menuConsultar;
+        private DataGridView dgUsuario;
     }
 }

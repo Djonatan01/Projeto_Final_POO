@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -13,72 +14,132 @@ namespace AgendaProvas.Dao
 {
     public class UsuarioDao
     {
-        public  void cadastrar(Usuario obj)
+        public UsuarioDao() 
         {
             //Abrir conexão com o banco de dados
             Conn.conectar();
+        }
 
+        #region Método cadastrar usuário
+        public void cadastrarUsuario(Usuario obj)
+        {
             try
             {
-                string sql = "INSERT INTO usuarios (`nome`, `email`, `senha`, `matricula`, `tipo`," +
-                " `periodo`, `curso`)" +
-                " VALUES (?,?,?,?,?,?,?)";
+                string sql = @"INSERT INTO usuarios (nome, email, senha, matricula, tipo, periodo, curso) 
+                               VALUES (@nome, @email, @senha, @matricula, @tipo, @periodo, @curso)";
 
-                MySqlCommand comnado = new MySqlCommand(sql, Conn.conexao);
+                MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
 
-                comnado.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = obj.Nome;
-                comnado.Parameters.Add("@email", MySqlDbType.VarChar, 200).Value = obj.Email;
-                comnado.Parameters.Add("@senha", MySqlDbType.VarChar, 10).Value = obj.Senha;
-                comnado.Parameters.Add("@matricula", MySqlDbType.Int64, 14).Value = obj.Matricula;
-                comnado.Parameters.Add("@tipo", MySqlDbType.VarChar, 50).Value = obj.Tipo;
-                comnado.Parameters.Add("@periodo", MySqlDbType.VarChar, 10).Value = obj.Periodo;
-                comnado.Parameters.Add("@curso", MySqlDbType.VarChar, 5).Value = obj.Curso;
+                cmdsql.Parameters.AddWithValue("@nome", obj.Nome);
+                cmdsql.Parameters.AddWithValue("@email", obj.Email);
+                cmdsql.Parameters.AddWithValue("@senha", obj.Senha);
+                cmdsql.Parameters.AddWithValue("@matricula", obj.Matricula);
+                cmdsql.Parameters.AddWithValue("@tipo", obj.Tipo);
+                cmdsql.Parameters.AddWithValue("@periodo", obj.Periodo);
+                cmdsql.Parameters.AddWithValue("@curso", obj.Curso);
 
                 //Executar o comando pata inserir dados no banco
-                comnado.ExecuteNonQuery();
+                cmdsql.ExecuteNonQuery();
 
-                //Fechar a conexão com o banco
+                //Fechar a conexão
                 Conn.conexao.Close();
+
+                MessageBox.Show("Cadastro realizado com sucesso!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro de cadastro entrar em contato com o Admin ", "Erro de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
-        public void alterar(Usuario obj)
+        #endregion
+        public void alterarUsuario(Usuario obj)
         {
-            //Abrir conexão com o banco de dados
-            Conn.conectar();
-
             try
             {
-                string sql = "UPDATE usuarios (`nome`, `email`, `senha`, `matricula`, `tipo`," +
-                " `periodo`, `curso`)" +
-                " VALUES (?,?,?,?,?,?,?)";
+                string sql = @"UPDATE usuarios set nome=@nome, email=@email, senha=@senha, matricula=@matricula, tipo=@tipo, periodo=@periodo, curso=@curso WHERE id = @id";
+                               
 
-                MySqlCommand comnado = new MySqlCommand(sql, Conn.conexao);
+                MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
 
-                comnado.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = obj.Nome;
-                comnado.Parameters.Add("@email", MySqlDbType.VarChar, 200).Value = obj.Email;
-                comnado.Parameters.Add("@senha", MySqlDbType.VarChar, 10).Value = obj.Senha;
-                comnado.Parameters.Add("@matricula", MySqlDbType.Int64, 14).Value = obj.Matricula;
-                comnado.Parameters.Add("@tipo", MySqlDbType.VarChar, 50).Value = obj.Tipo;
-                comnado.Parameters.Add("@periodo", MySqlDbType.VarChar, 10).Value = obj.Periodo;
-                comnado.Parameters.Add("@curso", MySqlDbType.VarChar, 5).Value = obj.Curso;
+                cmdsql.Parameters.AddWithValue("@nome", obj.Nome);
+                cmdsql.Parameters.AddWithValue("@email", obj.Email);
+                cmdsql.Parameters.AddWithValue("@senha", obj.Senha);
+                cmdsql.Parameters.AddWithValue("@matricula", obj.Matricula);
+                cmdsql.Parameters.AddWithValue("@tipo", obj.Tipo);
+                cmdsql.Parameters.AddWithValue("@periodo", obj.Periodo);
+                cmdsql.Parameters.AddWithValue("@curso", obj.Curso);
+                cmdsql.Parameters.AddWithValue("@id", obj.Id);
 
                 //Executar o comando pata inserir dados no banco
-                comnado.ExecuteNonQuery();
+                cmdsql.ExecuteNonQuery();
 
-                //Fechar a conexão com o banco
+                //Fechar a conexão
                 Conn.conexao.Close();
+
+                MessageBox.Show("Alteração realizada com sucesso!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro de alteração entrar em contato com o Admin ", "Erro de alteração", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }           
+        }
+
+        public void excluirUsuario(Usuario obj)
+        {
+            try
+            {
+                string sql = @"DELETE FROM usuarios WHERE id = @id";
+
+
+                MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
+                
+                cmdsql.Parameters.AddWithValue("@id",obj.Id);
+
+
+                //Executar o comando pata inserir dados no banco
+                cmdsql.ExecuteNonQuery();
+
+                //Fechar a conexão
+                Conn.conexao.Close();
+
+                MessageBox.Show("Exclusão realizada com sucesso!");
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro de exclusão entrar em contato com o Admin ", "Erro de exclusão", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public DataTable listarUsuarios()
+        {
+            //Comando SQL
+            string sql = @"SELECT * FROM usuarios";
+            
+            //Organizar o SQL
+            MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
+           
+            //Executar o comando
+            cmdsql.ExecuteNonQuery();
+            
+            //Criar DataTable e MySQLDataAdapter
+            DataTable tabelaUsuario = new DataTable();
+
+            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmdsql);
+            //Preencher o DataTable
+            dataAdapter.Fill(tabelaUsuario);
+            
+            //Fechar a conexão
+            Conn.conexao.Close();
+
+            //Retornar tabela com os dados
+            return tabelaUsuario;
+
+           
+
 
         }
+
+       
         public void login(string emailLogin, string senhaLogin)
         {
 
@@ -87,9 +148,7 @@ namespace AgendaProvas.Dao
             try
             {
                 string q = "'%" + emailLogin + "%'";
-
-                //Abrir conexão com o banco de dados
-                Conn.conectar();
+                
 
                 string sql = "SELECT * " +
                               "FROM usuarios " +
