@@ -28,7 +28,7 @@ namespace AgendaProvas.Dao
 
                 conexao.Open();
 
-                //MessageBox.Show("Sistema OK","Sistema conectado com banco",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Sistema OK","Sistema conectado com banco",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception)
             {
