@@ -154,6 +154,50 @@ namespace AgendaProvas
             //Limpar os campos 
             LimparForm();
 
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+            //implementar o método listar
+            UsuarioDao dao = new UsuarioDao();
+            dgUsuario.DataSource = dao.listarUsuarios();
+
+        }
+
+        private void dgUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id = int.Parse(dgUsuario.CurrentRow.Cells[0].Value.ToString());
+            matricula = int.Parse(dgUsuario.CurrentRow.Cells[1].Value.ToString());
+
+            txtId.Texts = dgUsuario.CurrentRow.Cells[0].Value.ToString();
+            txtNome.Texts = dgUsuario.CurrentRow.Cells[2].Value.ToString();
+            txtEmail.Texts = dgUsuario.CurrentRow.Cells[3].Value.ToString();
+            txtSenha.Texts = dgUsuario.CurrentRow.Cells[4].Value.ToString();
+            txtMatricula.Texts = dgUsuario.CurrentRow.Cells[1].Value.ToString();
+            txtTipo.Texts = dgUsuario.CurrentRow.Cells[5].Value.ToString();
+            txtPeriodo.Texts = dgUsuario.CurrentRow.Cells[6].Value.ToString();
+            txtCurso.Texts = dgUsuario.CurrentRow.Cells[7].Value.ToString();
+           
+            txtId.Enabled = false;
+            btConsultar.Visible = false;
+            txtId.Visible = true;
+            dgUsuario.Visible = false;
+            btAlterar.Visible = true;
+            btExcluir.Visible = true;
+            btcadastrar.Visible = true;
+            txtEmail.Visible = true;
+            txtSenha.Visible = true;
+            txtTipo.Visible = true;
+            txtPeriodo.Visible = true;
+            txtCurso.Visible = true;
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            Usuario obj = new Usuario();
+
+            obj.Id = id;
+
+            UsuarioDao dao = new UsuarioDao();
+            dao.excluirUsuario(obj);            
         }
     }
 }
