@@ -1,3 +1,4 @@
+using AgendaProvas.Dao;
 using System.Collections;
 
 namespace AgendaProvas
@@ -19,10 +20,22 @@ namespace AgendaProvas
                 }
                 else
                 {
-                    ArrayList verificarLogin = new ArrayList();
-                    //Consulta loginConsulta = new Consulta();
-                    //loginConsulta.consultar(txtEmailLogin.Texts, txtSenhaLogin.Texts);
-                    //verificarLogin = loginConsulta.consultar(txtEmailLogin.Texts,txtSenhaLogin.Texts);
+                    UsuarioDao dao = new UsuarioDao();
+                    bool check = false;
+                    check = dao.login(txtEmailLogin.Texts,txtSenhaLogin.Texts);
+                    if (check == true) 
+                    {
+
+                        Cadastro cad = new Cadastro();
+                        
+                        cad.Show();
+
+                        this.Hide();
+                    }
+                    else
+                    {
+
+                    }
                 }
             }
             catch
