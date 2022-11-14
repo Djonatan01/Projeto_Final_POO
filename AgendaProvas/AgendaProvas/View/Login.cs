@@ -25,16 +25,14 @@ namespace AgendaProvas
                     check = dao.login(txtEmailLogin.Texts,txtSenhaLogin.Texts);
                     if (check == true) 
                     {
-
                         Cadastro cad = new Cadastro();
-                        
                         cad.Show();
 
                         this.Hide();
                     }
                     else
                     {
-
+                        // Abrir a tela principal quando for aluno
                     }
                 }
             }
