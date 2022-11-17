@@ -61,7 +61,7 @@
             this.txtEmailLogin.BorderRadius = 10;
             this.txtEmailLogin.BorderSize = 2;
             this.txtEmailLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtEmailLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmailLogin.ForeColor = System.Drawing.Color.White;
             this.txtEmailLogin.Location = new System.Drawing.Point(16, 90);
             this.txtEmailLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmailLogin.Multiline = false;
@@ -83,7 +83,7 @@
             this.txtSenhaLogin.BorderRadius = 10;
             this.txtSenhaLogin.BorderSize = 2;
             this.txtSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSenhaLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSenhaLogin.ForeColor = System.Drawing.Color.White;
             this.txtSenhaLogin.Location = new System.Drawing.Point(16, 157);
             this.txtSenhaLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenhaLogin.Multiline = false;
