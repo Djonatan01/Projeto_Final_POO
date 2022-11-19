@@ -1,4 +1,5 @@
 using AgendaProvas.Dao;
+using AgendaProvas.View;
 using System.Collections;
 
 namespace AgendaProvas
@@ -27,9 +28,9 @@ namespace AgendaProvas
                     if (check == true) 
                     {
 
-                        UsuarioView cad = new UsuarioView();
-                        
-                        cad.Show();
+                        ProvasView prov = new ProvasView();
+
+                        prov.Show();
 
                         this.Hide();
                     }

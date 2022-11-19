@@ -127,3 +127,5 @@ C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProv
 C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.pdb
 C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.genruntimeconfig.cache
 C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\ref\AgendaProvas.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.View.CadastrarEventosView.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Properties.Resources.resources

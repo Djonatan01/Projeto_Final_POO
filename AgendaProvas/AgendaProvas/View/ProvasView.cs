@@ -16,5 +16,28 @@ namespace AgendaProvas.View
         {
             InitializeComponent();
         }
+
+        private void ProvasView_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btCadastrar_Click(object sender, EventArgs e)
+        {
+            UsuarioView cad = new UsuarioView();
+            
+            cad.Show();
+
+            this.Hide();
+        }
+
+        private void btAdicionar_Click(object sender, EventArgs e)
+        {
+            CadastrarEventosView cadEvento = new CadastrarEventosView();
+
+            cadEvento.Show();
+
+            this.Hide();
+        }
     }
 }

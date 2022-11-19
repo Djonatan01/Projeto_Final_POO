@@ -67,7 +67,7 @@
         kqkRzxBHVE2nfCHrscp5i7NWqbHWO/kPg3l9Jc11WqOIYwkJJCFCQQ1lVGAjSrtOioUUnUtd/COuP0ku
         hVxlMHIsoAoNsusH78Hv2lqF6SkvKSgBvS+O80HdCewCzbrjfB87TvME8D8DV3rbX20Ac5+k19ta5AgY
         2gYurtuasgdc7gDDT4Zsyq7kpyUUCsD7GbUpB4Rugf41r26tc5w+ABmq1fINcHAIjBcpe73Lv/s66/bn
-        Hbd+kH4AZpxyosN86bcAAAAJcEhZcwAAMrgAADK4ASjzJokAAAAHdElNRQfmCxMTLC+1NdCBAAAHN0lE
+        Hbd+kH4AZpxyosN86bcAAAAJcEhZcwAAMrYAADK2AYx6ancAAAAHdElNRQfmCxMTLC+1NdCBAAAHN0lE
         QVRYR72Ye0zTVxTHbxF84GsqD0U3FBQVKLS/R0tbSil9UEp5+IqbiC90+MAXvkVEM+NcXHRGF7NFs2XJ
         1CnGLS4zOk2UZE63zE2nkw1fm6IONbo4RER6dm75MQu92gLVk3z++f3u43vP755z7v2RdpjMbDZH6FNS
         9KJGu4hL0pQniOrzapXqX5tGAGsS71Twwv1YTjgXxwm75BxfxPG8muf5cKn/yzOr1aowmUw7NFptZbpW
@@ -102,10 +102,4 @@
         RK5CYII=
 </value>
   </data>
-  <metadata name="mnOpcao.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
-  </metadata>
 </root>

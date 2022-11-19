@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AgendaProvas.Dao;
 using AgendaProvas.Model;
+using AgendaProvas.View;
 using static System.Net.Mime.MediaTypeNames;
 //using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
@@ -134,6 +135,7 @@ namespace AgendaProvas
         {
             txtId.Texts = dgUsuario.CurrentRow.Cells[0].Value.ToString();
             txtNome.Texts = dgUsuario.CurrentRow.Cells[1].Value.ToString();
+            lbUsuario.Text = dgUsuario.CurrentRow.Cells[1].Value.ToString();
             txtEmail.Texts = dgUsuario.CurrentRow.Cells[2].Value.ToString();
             txtSenha.Texts = dgUsuario.CurrentRow.Cells[3].Value.ToString();
             txtMatricula.Texts = dgUsuario.CurrentRow.Cells[4].Value.ToString();
@@ -166,10 +168,16 @@ namespace AgendaProvas
 
         }
 
-        private void Cadastro_FormClosing(object sender, FormClosingEventArgs e)
+        private void btVoltar_Click(object sender, EventArgs e)
         {
-           
-            Application.Exit();               
+            ProvasView voltar = new ProvasView();
+
+            voltar.Show();
+
+            this.Hide();
         }
+
+        private void Cadastro_FormClosing(object sender, FormClosingEventArgs e)
+        {Application.Exit();}
     }
 }

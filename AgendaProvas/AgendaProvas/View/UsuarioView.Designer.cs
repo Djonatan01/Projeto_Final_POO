@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioView));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbUsuario = new System.Windows.Forms.Label();
+            this.btVoltar = new AgendaProvas.RJButton();
             this.txtNome = new CustomControls.RJControls.RJTextBox();
             this.txtEmail = new CustomControls.RJControls.RJTextBox();
             this.txtSenha = new CustomControls.RJControls.RJTextBox();
@@ -53,6 +56,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.cbNivelAcesso = new CustomControls.RJControls.RJComboBox();
             this.dgUsuario = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
             this.mnOpcao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuario)).BeginInit();
             this.SuspendLayout();
@@ -60,12 +64,45 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.lbUsuario);
+            this.panel1.Controls.Add(this.btVoltar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
             this.panel1.Size = new System.Drawing.Size(875, 42);
             this.panel1.TabIndex = 0;
+            // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbUsuario.ForeColor = System.Drawing.SystemColors.Window;
+            this.lbUsuario.Location = new System.Drawing.Point(403, 6);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(0, 30);
+            this.lbUsuario.TabIndex = 17;
+            this.lbUsuario.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // btVoltar
+            // 
+            this.btVoltar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btVoltar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVoltar.BackgroundImage")));
+            this.btVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btVoltar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btVoltar.BorderRadius = 30;
+            this.btVoltar.BorderSize = 0;
+            this.btVoltar.FlatAppearance.BorderSize = 0;
+            this.btVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btVoltar.ForeColor = System.Drawing.Color.White;
+            this.btVoltar.Location = new System.Drawing.Point(8, 1);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(40, 41);
+            this.btVoltar.TabIndex = 16;
+            this.btVoltar.TextColor = System.Drawing.Color.White;
+            this.btVoltar.UseVisualStyleBackColor = false;
+            this.btVoltar.Click += new System.EventHandler(this.btVoltar_Click);
             // 
             // txtNome
             // 
@@ -458,7 +495,7 @@
             // 
             this.dgUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgUsuario.Location = new System.Drawing.Point(384, 279);
+            this.dgUsuario.Location = new System.Drawing.Point(8, 279);
             this.dgUsuario.Name = "dgUsuario";
             this.dgUsuario.RowTemplate.Height = 25;
             this.dgUsuario.Size = new System.Drawing.Size(850, 286);
@@ -501,6 +538,8 @@
             this.Text = "Cadastro";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Cadastro_FormClosing);
             this.Load += new System.EventHandler(this.Cadastro_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.mnOpcao.ResumeLayout(false);
             this.mnOpcao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuario)).EndInit();
@@ -536,5 +575,7 @@
         private Label label8;
         private CustomControls.RJControls.RJComboBox cbNivelAcesso;
         private DataGridView dgUsuario;
+        private RJButton btVoltar;
+        private Label lbUsuario;
     }
 }

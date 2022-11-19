@@ -7,6 +7,9 @@
     <Compile Update="View\ProvasView.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\CadastrarEventosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\UsuarioView.cs">
       <SubType>Form</SubType>
     </Compile>
