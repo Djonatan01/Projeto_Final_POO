@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {}
+    "C:\\Users\\guara\\Documents\\Meus Projetos\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {
+    "C:\\Users\\guara\\Documents\\Meus Projetos\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
+        "projectUniqueName": "C:\\Users\\guara\\Documents\\Meus Projetos\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
         "projectName": "AgendaProvas",
-        "projectPath": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
-        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\obj\\",
+        "projectPath": "C:\\Users\\guara\\Documents\\Meus Projetos\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
+        "packagesPath": "C:\\Users\\guara\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guara\\Documents\\Meus Projetos\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\guara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
