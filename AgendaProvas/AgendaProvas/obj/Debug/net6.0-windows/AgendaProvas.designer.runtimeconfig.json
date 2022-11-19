@@ -14,6 +14,8 @@
     "additionalProbingPaths": [
       "C:\\Users\\adati\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\adati\\.nuget\\packages",
+      "C:\\Users\\guara\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\guara\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
