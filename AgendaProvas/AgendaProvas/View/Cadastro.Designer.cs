@@ -52,7 +52,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(0, 23);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 42);
+            this.panel1.Size = new System.Drawing.Size(674, 42);
             this.panel1.TabIndex = 0;
             // 
             // txtNome
@@ -86,7 +86,7 @@
             this.txtEmail.BorderSize = 2;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(13, 138);
+            this.txtEmail.Location = new System.Drawing.Point(13, 148);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
@@ -108,7 +108,7 @@
             this.txtSenha.BorderSize = 2;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtSenha.ForeColor = System.Drawing.Color.White;
-            this.txtSenha.Location = new System.Drawing.Point(13, 191);
+            this.txtSenha.Location = new System.Drawing.Point(311, 148);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Multiline = false;
             this.txtSenha.Name = "txtSenha";
@@ -130,7 +130,7 @@
             this.txtMatricula.BorderSize = 2;
             this.txtMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMatricula.ForeColor = System.Drawing.Color.White;
-            this.txtMatricula.Location = new System.Drawing.Point(13, 233);
+            this.txtMatricula.Location = new System.Drawing.Point(13, 207);
             this.txtMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatricula.Multiline = false;
             this.txtMatricula.Name = "txtMatricula";
@@ -152,7 +152,7 @@
             this.txtCurso.BorderSize = 2;
             this.txtCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtCurso.ForeColor = System.Drawing.Color.White;
-            this.txtCurso.Location = new System.Drawing.Point(13, 375);
+            this.txtCurso.Location = new System.Drawing.Point(13, 271);
             this.txtCurso.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurso.Multiline = false;
             this.txtCurso.Name = "txtCurso";
@@ -174,7 +174,7 @@
             this.txtPeriodo.BorderSize = 2;
             this.txtPeriodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPeriodo.ForeColor = System.Drawing.Color.White;
-            this.txtPeriodo.Location = new System.Drawing.Point(13, 326);
+            this.txtPeriodo.Location = new System.Drawing.Point(311, 271);
             this.txtPeriodo.Margin = new System.Windows.Forms.Padding(4);
             this.txtPeriodo.Multiline = false;
             this.txtPeriodo.Name = "txtPeriodo";
@@ -198,7 +198,7 @@
             this.btcadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcadastrar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btcadastrar.ForeColor = System.Drawing.Color.White;
-            this.btcadastrar.Location = new System.Drawing.Point(9, 474);
+            this.btcadastrar.Location = new System.Drawing.Point(242, 357);
             this.btcadastrar.Name = "btcadastrar";
             this.btcadastrar.Size = new System.Drawing.Size(100, 30);
             this.btcadastrar.TabIndex = 7;
@@ -218,7 +218,7 @@
             this.btConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btConsultar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btConsultar.ForeColor = System.Drawing.Color.White;
-            this.btConsultar.Location = new System.Drawing.Point(270, 90);
+            this.btConsultar.Location = new System.Drawing.Point(461, 89);
             this.btConsultar.Name = "btConsultar";
             this.btConsultar.Size = new System.Drawing.Size(100, 30);
             this.btConsultar.TabIndex = 8;
@@ -238,7 +238,7 @@
             this.btExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btExcluir.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btExcluir.ForeColor = System.Drawing.Color.White;
-            this.btExcluir.Location = new System.Drawing.Point(112, 474);
+            this.btExcluir.Location = new System.Drawing.Point(461, 357);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(100, 30);
             this.btExcluir.TabIndex = 9;
@@ -257,7 +257,7 @@
             this.btAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btAlterar.ForeColor = System.Drawing.Color.White;
-            this.btAlterar.Location = new System.Drawing.Point(218, 474);
+            this.btAlterar.Location = new System.Drawing.Point(13, 357);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(100, 30);
             this.btAlterar.TabIndex = 10;
@@ -275,7 +275,7 @@
             this.txtTipo.BorderSize = 2;
             this.txtTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTipo.ForeColor = System.Drawing.Color.White;
-            this.txtTipo.Location = new System.Drawing.Point(13, 278);
+            this.txtTipo.Location = new System.Drawing.Point(311, 207);
             this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Multiline = false;
             this.txtTipo.Name = "txtTipo";
@@ -298,7 +298,7 @@
             this.rjTextBox1.Enabled = false;
             this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rjTextBox1.ForeColor = System.Drawing.Color.White;
-            this.rjTextBox1.Location = new System.Drawing.Point(13, 424);
+            this.rjTextBox1.Location = new System.Drawing.Point(311, 89);
             this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
@@ -318,7 +318,7 @@
             this.menuConsultar});
             this.mnOpcao.Location = new System.Drawing.Point(0, 0);
             this.mnOpcao.Name = "mnOpcao";
-            this.mnOpcao.Size = new System.Drawing.Size(484, 24);
+            this.mnOpcao.Size = new System.Drawing.Size(599, 24);
             this.mnOpcao.TabIndex = 11;
             this.mnOpcao.Text = "Opção";
             // 
@@ -340,7 +340,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(484, 517);
+            this.ClientSize = new System.Drawing.Size(599, 419);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btConsultar);
