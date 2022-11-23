@@ -53,7 +53,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbId = new System.Windows.Forms.Label();
             this.cbNivelAcesso = new CustomControls.RJControls.RJComboBox();
             this.dgUsuario = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -456,17 +456,17 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "RA/Matricula:";
             // 
-            // label8
+            // lbId
             // 
-            this.label8.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(13, 111);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 17);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Id:";
+            this.lbId.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
+            this.lbId.AutoSize = true;
+            this.lbId.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbId.ForeColor = System.Drawing.Color.White;
+            this.lbId.Location = new System.Drawing.Point(13, 111);
+            this.lbId.Name = "lbId";
+            this.lbId.Size = new System.Drawing.Size(23, 17);
+            this.lbId.TabIndex = 15;
+            this.lbId.Text = "Id:";
             // 
             // cbNivelAcesso
             // 
@@ -495,7 +495,7 @@
             // 
             this.dgUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgUsuario.Location = new System.Drawing.Point(8, 279);
+            this.dgUsuario.Location = new System.Drawing.Point(111, 282);
             this.dgUsuario.Name = "dgUsuario";
             this.dgUsuario.RowTemplate.Height = 25;
             this.dgUsuario.Size = new System.Drawing.Size(850, 286);
@@ -509,7 +509,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(875, 633);
             this.Controls.Add(this.dgUsuario);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lbId);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -572,7 +572,7 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private Label label8;
+        private Label lbId;
         private CustomControls.RJControls.RJComboBox cbNivelAcesso;
         private DataGridView dgUsuario;
         private RJButton btVoltar;

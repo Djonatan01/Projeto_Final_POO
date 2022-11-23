@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AgendaProvas.Dao;
+using AgendaProvas.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,6 +31,21 @@ namespace AgendaProvas.View
         private void CadastrarEventosView_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btCadastraEvento_Click(object sender, EventArgs e)
+        {
+            Evento obj = new Evento();
+            obj.Data = txtData.Texts;
+            obj.Hora = txtHora.Texts;
+            obj.Disciplina = txtDisciplina.Texts;
+            obj.Periodo = cbPeriodo.Texts;
+            obj.Curso = cbCurso.Texts;
+            obj.Sala = cbSala.Texts;
+
+            EventoDao dao = new EventoDao();
+
+            dao.cadastrarEvento(obj);
         }
     }
 }

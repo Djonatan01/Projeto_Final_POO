@@ -111,6 +111,7 @@ namespace AgendaProvas
         public void menuConsultar_Click()
         {
             // Ocultar os campos
+            lbId.Visible = false;
             txtId.Visible = false;
             dgUsuario.Visible = true;
             btConsultar.Visible = true;
@@ -122,6 +123,9 @@ namespace AgendaProvas
             cbNivelAcesso.Visible = false;
             cbPeriodo.Visible = false;
             cbCurso.Visible = false;
+            txtId.Texts = "";
+            txtMatricula.Texts = "";
+            txtNome.Texts = "";
         }
         private void Cadastro_Load(object sender, EventArgs e)
         {
@@ -142,7 +146,6 @@ namespace AgendaProvas
             cbNivelAcesso.Texts = dgUsuario.CurrentRow.Cells[5].Value.ToString();
             cbPeriodo.Texts = dgUsuario.CurrentRow.Cells[6].Value.ToString();
             cbCurso.Texts = dgUsuario.CurrentRow.Cells[7].Value.ToString();
-
             menuCadastrar_Click();
         }
 
