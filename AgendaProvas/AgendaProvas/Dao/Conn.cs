@@ -25,10 +25,7 @@ namespace AgendaProvas.Dao
             {
                 // Criando a conexão com o banco de dados
                 conexao = new MySqlConnection("server=localhost;uid=root;pwd=;database=bdprovas");
-
                 conexao.Open();
-
-                MessageBox.Show("Sistema OK","Sistema conectado com banco",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception)
             {

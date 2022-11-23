@@ -1,3 +1,5 @@
+using AgendaProvas.Dao;
+using AgendaProvas.View;
 using System.Collections;
 
 namespace AgendaProvas
@@ -7,6 +9,7 @@ namespace AgendaProvas
         public Login()
         {
             InitializeComponent();
+            txtEmailLogin.Select();
         }
 
         private void btLogar_Click(object sender, EventArgs e)
@@ -19,10 +22,21 @@ namespace AgendaProvas
                 }
                 else
                 {
-                    ArrayList verificarLogin = new ArrayList();
-                    //Consulta loginConsulta = new Consulta();
-                    //loginConsulta.consultar(txtEmailLogin.Texts, txtSenhaLogin.Texts);
-                    //verificarLogin = loginConsulta.consultar(txtEmailLogin.Texts,txtSenhaLogin.Texts);
+                    UsuarioDao dao = new UsuarioDao();
+                    bool check = false;
+                    check = dao.login(txtEmailLogin.Texts,txtSenhaLogin.Texts);
+                    if (check == true) 
+                    {
+
+                        ProvasView prov = new ProvasView();
+
+                        prov.Show();
+
+                        this.Hide();
+                    }
+                    else
+                    {
+                    }
                 }
             }
             catch

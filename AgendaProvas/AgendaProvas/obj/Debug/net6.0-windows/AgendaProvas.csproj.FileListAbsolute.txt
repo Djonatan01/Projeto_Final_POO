@@ -42,3 +42,90 @@ C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaP
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Cadastro.resources
 C:\Users\diego\OneDrive\Documentos\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CopyComplete
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.exe
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.deps.json
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.runtimeconfig.json
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.pdb
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\ZstdNet.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.AssemblyReference.cache
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJTextBox.resources
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Cadastro.resources
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Login.resources
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.GenerateResource.cache
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.AssemblyInfoInputs.cache
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.AssemblyInfo.cs
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CoreCompileInputs.cache
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CopyComplete
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\refint\AgendaProvas.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.pdb
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.genruntimeconfig.cache
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\ref\AgendaProvas.dll
+D:\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJComboBox.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.exe
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.deps.json
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.runtimeconfig.json
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.pdb
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\Google.Protobuf.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\MySql.Data.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\ZstdNet.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.AssemblyReference.cache
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJComboBox.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJTextBox.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Login.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.View.ProvasView.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.UsuarioView.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.GenerateResource.cache
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.AssemblyInfoInputs.cache
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.AssemblyInfo.cs
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CoreCompileInputs.cache
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CopyComplete
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\refint\AgendaProvas.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.pdb
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.genruntimeconfig.cache
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\ref\AgendaProvas.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.exe
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.deps.json
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.runtimeconfig.json
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\AgendaProvas.pdb
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.AssemblyReference.cache
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJComboBox.resources
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\CustomControls.RJControls.RJTextBox.resources
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Cadastro.resources
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Login.resources
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.GenerateResource.cache
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.AssemblyInfoInputs.cache
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.AssemblyInfo.cs
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CoreCompileInputs.cache
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.csproj.CopyComplete
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\refint\AgendaProvas.dll
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.pdb
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.genruntimeconfig.cache
+C:\Users\guara\Documents\Meus Projetos\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\ref\AgendaProvas.dll
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.View.CadastrarEventosView.resources
+D:\GitHub\Projeto_Final_POO\AgendaProvas\AgendaProvas\obj\Debug\net6.0-windows\AgendaProvas.Properties.Resources.resources

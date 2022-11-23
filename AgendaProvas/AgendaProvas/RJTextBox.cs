@@ -191,8 +191,6 @@ namespace CustomControls.RJControls
             }
         }
 
-
-
         #endregion
 
         #region -> Overridden methods
