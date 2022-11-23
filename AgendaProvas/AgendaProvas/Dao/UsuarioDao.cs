@@ -55,6 +55,8 @@ namespace AgendaProvas.Dao
             }
         }
         #endregion
+
+        #region Método de alteração
         public void alterarUsuario(Usuario obj)
         {
             try
@@ -86,7 +88,9 @@ namespace AgendaProvas.Dao
                 MessageBox.Show("Erro de alteração entrar em contato com o Admin ", "Erro de alteração", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }           
         }
+        #endregion
 
+        #region Método de excluir
         public void excluirUsuario(Usuario obj)
         {
             try
@@ -112,7 +116,7 @@ namespace AgendaProvas.Dao
                 MessageBox.Show("Erro de exclusão entrar em contato com o Admin ", "Erro de exclusão", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        #endregion
         public DataTable listarUsuarios()
         {
             //Comando SQL

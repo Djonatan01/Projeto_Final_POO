@@ -30,19 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarEventosView));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.rjTextBox1 = new CustomControls.RJControls.RJTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rjTextBox2 = new CustomControls.RJControls.RJTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.rjTextBox3 = new CustomControls.RJControls.RJTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.rjTextBox4 = new CustomControls.RJControls.RJTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.rjTextBox5 = new CustomControls.RJControls.RJTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.rjButton1 = new AgendaProvas.RJButton();
             this.btVoltar = new AgendaProvas.RJButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtDisciplina = new CustomControls.RJControls.RJTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtHora = new CustomControls.RJControls.RJTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btCadastraEvento = new AgendaProvas.RJButton();
+            this.txtData = new CustomControls.RJControls.RJTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbPeriodo = new CustomControls.RJControls.RJComboBox();
+            this.cbCurso = new CustomControls.RJControls.RJComboBox();
+            this.cbSala = new CustomControls.RJControls.RJComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,201 +59,6 @@
             this.panel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
             this.panel1.Size = new System.Drawing.Size(597, 42);
             this.panel1.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(172, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(230, 23);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Cadastro de eventos";
-            // 
-            // rjTextBox1
-            // 
-            this.rjTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox1.BorderRadius = 15;
-            this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox1.Location = new System.Drawing.Point(13, 95);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox1.Multiline = false;
-            this.rjTextBox1.Name = "rjTextBox1";
-            this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox1.PasswordChar = false;
-            this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox1.PlaceholderText = "";
-            this.rjTextBox1.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox1.TabIndex = 2;
-            this.rjTextBox1.Texts = "";
-            this.rjTextBox1.UnderlinedStyle = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Disciplina:";
-            // 
-            // rjTextBox2
-            // 
-            this.rjTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox2.BorderRadius = 15;
-            this.rjTextBox2.BorderSize = 2;
-            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(13, 153);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox2.Multiline = false;
-            this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox2.PasswordChar = false;
-            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox2.PlaceholderText = "";
-            this.rjTextBox2.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox2.TabIndex = 2;
-            this.rjTextBox2.Texts = "";
-            this.rjTextBox2.UnderlinedStyle = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 134);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Local:";
-            // 
-            // rjTextBox3
-            // 
-            this.rjTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox3.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox3.BorderRadius = 15;
-            this.rjTextBox3.BorderSize = 2;
-            this.rjTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox3.Location = new System.Drawing.Point(13, 209);
-            this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox3.Multiline = false;
-            this.rjTextBox3.Name = "rjTextBox3";
-            this.rjTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox3.PasswordChar = false;
-            this.rjTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox3.PlaceholderText = "";
-            this.rjTextBox3.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox3.TabIndex = 2;
-            this.rjTextBox3.Texts = "";
-            this.rjTextBox3.UnderlinedStyle = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 190);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Hora:";
-            // 
-            // rjTextBox4
-            // 
-            this.rjTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox4.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox4.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox4.BorderRadius = 15;
-            this.rjTextBox4.BorderSize = 2;
-            this.rjTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox4.Location = new System.Drawing.Point(312, 95);
-            this.rjTextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox4.Multiline = false;
-            this.rjTextBox4.Name = "rjTextBox4";
-            this.rjTextBox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox4.PasswordChar = false;
-            this.rjTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox4.PlaceholderText = "";
-            this.rjTextBox4.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox4.TabIndex = 2;
-            this.rjTextBox4.Texts = "";
-            this.rjTextBox4.UnderlinedStyle = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(312, 76);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Periodo:";
-            // 
-            // rjTextBox5
-            // 
-            this.rjTextBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.rjTextBox5.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjTextBox5.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox5.BorderRadius = 15;
-            this.rjTextBox5.BorderSize = 2;
-            this.rjTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rjTextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox5.Location = new System.Drawing.Point(312, 153);
-            this.rjTextBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox5.Multiline = false;
-            this.rjTextBox5.Name = "rjTextBox5";
-            this.rjTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox5.PasswordChar = false;
-            this.rjTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox5.PlaceholderText = "";
-            this.rjTextBox5.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox5.TabIndex = 2;
-            this.rjTextBox5.Texts = "";
-            this.rjTextBox5.UnderlinedStyle = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(312, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 15);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Data:";
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 15;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(373, 200);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(150, 40);
-            this.rjButton1.TabIndex = 4;
-            this.rjButton1.Text = "Cadastrar";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // btVoltar
             // 
@@ -273,23 +80,267 @@
             this.btVoltar.UseVisualStyleBackColor = false;
             this.btVoltar.Click += new System.EventHandler(this.btVoltar_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(172, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(230, 23);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Cadastro de eventos";
+            // 
+            // txtDisciplina
+            // 
+            this.txtDisciplina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtDisciplina.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtDisciplina.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtDisciplina.BorderRadius = 15;
+            this.txtDisciplina.BorderSize = 2;
+            this.txtDisciplina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDisciplina.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtDisciplina.Location = new System.Drawing.Point(13, 95);
+            this.txtDisciplina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDisciplina.Multiline = false;
+            this.txtDisciplina.Name = "txtDisciplina";
+            this.txtDisciplina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDisciplina.PasswordChar = false;
+            this.txtDisciplina.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDisciplina.PlaceholderText = "";
+            this.txtDisciplina.Size = new System.Drawing.Size(250, 31);
+            this.txtDisciplina.TabIndex = 2;
+            this.txtDisciplina.Texts = "";
+            this.txtDisciplina.UnderlinedStyle = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(13, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Disciplina:";
+            // 
+            // txtHora
+            // 
+            this.txtHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtHora.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtHora.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtHora.BorderRadius = 15;
+            this.txtHora.BorderSize = 2;
+            this.txtHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtHora.Location = new System.Drawing.Point(13, 209);
+            this.txtHora.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHora.Multiline = false;
+            this.txtHora.Name = "txtHora";
+            this.txtHora.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtHora.PasswordChar = false;
+            this.txtHora.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtHora.PlaceholderText = "";
+            this.txtHora.Size = new System.Drawing.Size(250, 31);
+            this.txtHora.TabIndex = 2;
+            this.txtHora.Texts = "";
+            this.txtHora.UnderlinedStyle = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(13, 190);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Hora:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(312, 76);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 15);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Periodo:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(13, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 15);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Data:";
+            // 
+            // btCadastraEvento
+            // 
+            this.btCadastraEvento.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btCadastraEvento.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btCadastraEvento.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btCadastraEvento.BorderRadius = 15;
+            this.btCadastraEvento.BorderSize = 0;
+            this.btCadastraEvento.FlatAppearance.BorderSize = 0;
+            this.btCadastraEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCadastraEvento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btCadastraEvento.ForeColor = System.Drawing.Color.White;
+            this.btCadastraEvento.Location = new System.Drawing.Point(213, 298);
+            this.btCadastraEvento.Name = "btCadastraEvento";
+            this.btCadastraEvento.Size = new System.Drawing.Size(150, 40);
+            this.btCadastraEvento.TabIndex = 4;
+            this.btCadastraEvento.Text = "Cadastrar";
+            this.btCadastraEvento.TextColor = System.Drawing.Color.White;
+            this.btCadastraEvento.UseVisualStyleBackColor = false;
+            this.btCadastraEvento.Click += new System.EventHandler(this.btCadastraEvento_Click);
+            // 
+            // txtData
+            // 
+            this.txtData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtData.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtData.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtData.BorderRadius = 15;
+            this.txtData.BorderSize = 2;
+            this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtData.Location = new System.Drawing.Point(13, 153);
+            this.txtData.Margin = new System.Windows.Forms.Padding(4);
+            this.txtData.Multiline = false;
+            this.txtData.Name = "txtData";
+            this.txtData.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtData.PasswordChar = false;
+            this.txtData.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtData.PlaceholderText = "";
+            this.txtData.Size = new System.Drawing.Size(250, 31);
+            this.txtData.TabIndex = 2;
+            this.txtData.Texts = "";
+            this.txtData.UnderlinedStyle = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(312, 134);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Curso:";
+            // 
+            // cbPeriodo
+            // 
+            this.cbPeriodo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.cbPeriodo.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cbPeriodo.BorderSize = 1;
+            this.cbPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbPeriodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbPeriodo.ForeColor = System.Drawing.Color.DimGray;
+            this.cbPeriodo.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cbPeriodo.Items.AddRange(new object[] {
+            "",
+            "1° Semestre",
+            "2° Semestre",
+            "3° Semestre",
+            "4° Semestre",
+            "5° Semestre",
+            "6° Semestre"});
+            this.cbPeriodo.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cbPeriodo.ListTextColor = System.Drawing.Color.DimGray;
+            this.cbPeriodo.Location = new System.Drawing.Point(312, 96);
+            this.cbPeriodo.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbPeriodo.Name = "cbPeriodo";
+            this.cbPeriodo.Padding = new System.Windows.Forms.Padding(1);
+            this.cbPeriodo.Size = new System.Drawing.Size(200, 30);
+            this.cbPeriodo.TabIndex = 16;
+            this.cbPeriodo.Texts = "";
+            // 
+            // cbCurso
+            // 
+            this.cbCurso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.cbCurso.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cbCurso.BorderSize = 1;
+            this.cbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbCurso.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbCurso.ForeColor = System.Drawing.Color.DimGray;
+            this.cbCurso.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cbCurso.Items.AddRange(new object[] {
+            "",
+            "ADS",
+            "GPI",
+            "EVENT"});
+            this.cbCurso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cbCurso.ListTextColor = System.Drawing.Color.DimGray;
+            this.cbCurso.Location = new System.Drawing.Point(312, 154);
+            this.cbCurso.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbCurso.Name = "cbCurso";
+            this.cbCurso.Padding = new System.Windows.Forms.Padding(1);
+            this.cbCurso.Size = new System.Drawing.Size(200, 30);
+            this.cbCurso.TabIndex = 17;
+            this.cbCurso.Texts = "";
+            // 
+            // cbSala
+            // 
+            this.cbSala.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.cbSala.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.cbSala.BorderSize = 1;
+            this.cbSala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cbSala.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbSala.ForeColor = System.Drawing.Color.DimGray;
+            this.cbSala.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.cbSala.Items.AddRange(new object[] {
+            "",
+            "S1",
+            "S2",
+            "S3",
+            "L1",
+            "L2",
+            "L3",
+            "L4"});
+            this.cbSala.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.cbSala.ListTextColor = System.Drawing.Color.DimGray;
+            this.cbSala.Location = new System.Drawing.Point(312, 210);
+            this.cbSala.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cbSala.Name = "cbSala";
+            this.cbSala.Padding = new System.Windows.Forms.Padding(1);
+            this.cbSala.Size = new System.Drawing.Size(200, 30);
+            this.cbSala.TabIndex = 17;
+            this.cbSala.Texts = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(312, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 17);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Sala / Laboratório:";
+            // 
             // CadastrarEventosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(597, 450);
-            this.Controls.Add(this.rjButton1);
+            this.ClientSize = new System.Drawing.Size(597, 414);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbPeriodo);
+            this.Controls.Add(this.cbSala);
+            this.Controls.Add(this.cbCurso);
+            this.Controls.Add(this.btCadastraEvento);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rjTextBox5);
-            this.Controls.Add(this.rjTextBox4);
-            this.Controls.Add(this.rjTextBox3);
-            this.Controls.Add(this.rjTextBox2);
-            this.Controls.Add(this.rjTextBox1);
+            this.Controls.Add(this.txtData);
+            this.Controls.Add(this.txtHora);
+            this.Controls.Add(this.txtDisciplina);
             this.Controls.Add(this.panel1);
             this.Name = "CadastrarEventosView";
             this.Text = "ProvasView";
@@ -304,18 +355,20 @@
         #endregion
 
         private Panel panel1;
-        private CustomControls.RJControls.RJTextBox rjTextBox1;
+        private CustomControls.RJControls.RJTextBox txtDisciplina;
         private Label label1;
-        private CustomControls.RJControls.RJTextBox rjTextBox2;
-        private Label label2;
-        private CustomControls.RJControls.RJTextBox rjTextBox3;
+        private CustomControls.RJControls.RJTextBox txtHora;
         private Label label3;
-        private CustomControls.RJControls.RJTextBox rjTextBox4;
         private Label label4;
-        private CustomControls.RJControls.RJTextBox rjTextBox5;
         private Label label5;
-        private RJButton rjButton1;
+        private RJButton btCadastraEvento;
         private Label label6;
         private RJButton btVoltar;
+        private CustomControls.RJControls.RJTextBox txtData;
+        private Label label7;
+        private CustomControls.RJControls.RJComboBox cbPeriodo;
+        private CustomControls.RJControls.RJComboBox cbCurso;
+        private CustomControls.RJControls.RJComboBox cbSala;
+        private Label label2;
     }
 }
