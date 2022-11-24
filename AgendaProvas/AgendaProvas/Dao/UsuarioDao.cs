@@ -17,11 +17,13 @@ namespace AgendaProvas.Dao
     public class UsuarioDao
     {
         public bool check;
+        #region Método conectar Banco de dados
         public UsuarioDao() 
         {
             //Abrir conexão com o banco de dados
             Conn.conectar();
         }
+        #endregion
 
         #region Método cadastrar usuário
         public void cadastrarUsuario(Usuario obj)
@@ -117,6 +119,8 @@ namespace AgendaProvas.Dao
             }
         }
         #endregion
+
+        #region Método listar usuarios 
         public DataTable listarUsuarios()
         {
             //Comando SQL
@@ -142,7 +146,9 @@ namespace AgendaProvas.Dao
             return tabelaUsuario;
         }
 
-       
+        #endregion
+
+        #region Método login
         public bool login(string emailLogin, string senhaLogin)
         {
 
@@ -184,5 +190,6 @@ namespace AgendaProvas.Dao
 
             return check;
         }
+        #endregion
     }
 }

@@ -8,6 +8,7 @@ namespace AgendaProvas.Model
 {
     public class Evento
     {
+        private int id;
         private string data;
         private string hora;
         private string disciplina;
@@ -17,6 +18,7 @@ namespace AgendaProvas.Model
 
         public Evento() { }
 
+        public string Id { get; set; }
         public string Data { get; set; }
         public string Hora { get; set; }
         public string Disciplina { get; set; }
