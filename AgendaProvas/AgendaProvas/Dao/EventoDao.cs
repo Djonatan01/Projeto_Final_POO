@@ -57,13 +57,13 @@ namespace AgendaProvas.Dao
         {
             try
             {
-                string sql = @"UPDATE usuarios set data=@data, hora=@hora, disciplina=@disciplina, periodo=@periodo, curso=@curso, sala=@sala WHERE id = @id";
+                string sql = @"UPDATE eventos set data=@data, hora=@hora, disciplina=@disciplina, periodo=@periodo, curso=@curso, sala=@sala WHERE id = @id";
 
 
                 MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
 
                 cmdsql.Parameters.AddWithValue("@data", obj.Data);
-                cmdsql.Parameters.AddWithValue("@data", obj.Hora);
+                cmdsql.Parameters.AddWithValue("@hora", obj.Hora);
                 cmdsql.Parameters.AddWithValue("@disciplina", obj.Disciplina);
                 cmdsql.Parameters.AddWithValue("@periodo", obj.Periodo);
                 cmdsql.Parameters.AddWithValue("@curso", obj.Curso);
@@ -81,7 +81,7 @@ namespace AgendaProvas.Dao
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro de alteração entrar em contato com o Admin ", "Erro de alteração", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro de alteração entrar em contato com o Admin " + ex, "Erro de alteração", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
