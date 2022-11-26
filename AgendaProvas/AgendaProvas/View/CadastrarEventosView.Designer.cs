@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btVoltar = new AgendaProvas.RJButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDisciplina = new CustomControls.RJControls.RJTextBox();
+            this.txtEvento = new CustomControls.RJControls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHora = new CustomControls.RJControls.RJTextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +47,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtMdata = new System.Windows.Forms.MaskedTextBox();
             this.txtMhora = new System.Windows.Forms.MaskedTextBox();
+            this.txtDiscciplina = new CustomControls.RJControls.RJTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,27 +96,27 @@
             this.label6.TabIndex = 100;
             this.label6.Text = "Cadastro de eventos";
             // 
-            // txtDisciplina
+            // txtEvento
             // 
-            this.txtDisciplina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txtDisciplina.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtDisciplina.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtDisciplina.BorderRadius = 15;
-            this.txtDisciplina.BorderSize = 1;
-            this.txtDisciplina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDisciplina.ForeColor = System.Drawing.Color.White;
-            this.txtDisciplina.Location = new System.Drawing.Point(13, 95);
-            this.txtDisciplina.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDisciplina.Multiline = false;
-            this.txtDisciplina.Name = "txtDisciplina";
-            this.txtDisciplina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtDisciplina.PasswordChar = false;
-            this.txtDisciplina.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtDisciplina.PlaceholderText = "";
-            this.txtDisciplina.Size = new System.Drawing.Size(250, 31);
-            this.txtDisciplina.TabIndex = 1;
-            this.txtDisciplina.Texts = "";
-            this.txtDisciplina.UnderlinedStyle = false;
+            this.txtEvento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtEvento.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtEvento.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtEvento.BorderRadius = 15;
+            this.txtEvento.BorderSize = 1;
+            this.txtEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEvento.ForeColor = System.Drawing.Color.White;
+            this.txtEvento.Location = new System.Drawing.Point(13, 95);
+            this.txtEvento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEvento.Multiline = false;
+            this.txtEvento.Name = "txtEvento";
+            this.txtEvento.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEvento.PasswordChar = false;
+            this.txtEvento.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEvento.PlaceholderText = "";
+            this.txtEvento.Size = new System.Drawing.Size(250, 31);
+            this.txtEvento.TabIndex = 1;
+            this.txtEvento.Texts = "";
+            this.txtEvento.UnderlinedStyle = false;
             // 
             // label1
             // 
@@ -123,9 +125,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 15);
+            this.label1.Size = new System.Drawing.Size(46, 15);
             this.label1.TabIndex = 100;
-            this.label1.Text = "Disciplina:";
+            this.label1.Text = "Evento:";
             // 
             // txtHora
             // 
@@ -137,7 +139,7 @@
             this.txtHora.Enabled = false;
             this.txtHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtHora.ForeColor = System.Drawing.Color.White;
-            this.txtHora.Location = new System.Drawing.Point(153, 154);
+            this.txtHora.Location = new System.Drawing.Point(153, 210);
             this.txtHora.Margin = new System.Windows.Forms.Padding(4);
             this.txtHora.Multiline = false;
             this.txtHora.Name = "txtHora";
@@ -155,7 +157,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(153, 135);
+            this.label3.Location = new System.Drawing.Point(153, 191);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 15);
             this.label3.TabIndex = 100;
@@ -177,7 +179,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(13, 134);
+            this.label5.Location = new System.Drawing.Point(13, 190);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 15);
             this.label5.TabIndex = 100;
@@ -213,7 +215,7 @@
             this.txtData.Enabled = false;
             this.txtData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtData.ForeColor = System.Drawing.Color.White;
-            this.txtData.Location = new System.Drawing.Point(13, 153);
+            this.txtData.Location = new System.Drawing.Point(13, 209);
             this.txtData.Margin = new System.Windows.Forms.Padding(4);
             this.txtData.Multiline = false;
             this.txtData.Name = "txtData";
@@ -333,7 +335,7 @@
             this.txtMdata.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMdata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMdata.ForeColor = System.Drawing.Color.White;
-            this.txtMdata.Location = new System.Drawing.Point(27, 160);
+            this.txtMdata.Location = new System.Drawing.Point(27, 216);
             this.txtMdata.Mask = "00/00/0000";
             this.txtMdata.Name = "txtMdata";
             this.txtMdata.Size = new System.Drawing.Size(80, 19);
@@ -346,12 +348,45 @@
             this.txtMhora.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMhora.ForeColor = System.Drawing.Color.White;
-            this.txtMhora.Location = new System.Drawing.Point(188, 161);
+            this.txtMhora.Location = new System.Drawing.Point(188, 217);
             this.txtMhora.Mask = "00:00";
             this.txtMhora.Name = "txtMhora";
             this.txtMhora.Size = new System.Drawing.Size(59, 19);
             this.txtMhora.TabIndex = 3;
             this.txtMhora.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDiscciplina
+            // 
+            this.txtDiscciplina.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtDiscciplina.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtDiscciplina.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtDiscciplina.BorderRadius = 15;
+            this.txtDiscciplina.BorderSize = 1;
+            this.txtDiscciplina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtDiscciplina.ForeColor = System.Drawing.Color.White;
+            this.txtDiscciplina.Location = new System.Drawing.Point(13, 155);
+            this.txtDiscciplina.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiscciplina.Multiline = false;
+            this.txtDiscciplina.Name = "txtDiscciplina";
+            this.txtDiscciplina.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtDiscciplina.PasswordChar = false;
+            this.txtDiscciplina.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtDiscciplina.PlaceholderText = "";
+            this.txtDiscciplina.Size = new System.Drawing.Size(250, 31);
+            this.txtDiscciplina.TabIndex = 1;
+            this.txtDiscciplina.Texts = "";
+            this.txtDiscciplina.UnderlinedStyle = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(13, 136);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(62, 15);
+            this.label8.TabIndex = 100;
+            this.label8.Text = "Disciplina:";
             // 
             // CadastrarEventosView
             // 
@@ -370,10 +405,12 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.txtHora);
-            this.Controls.Add(this.txtDisciplina);
+            this.Controls.Add(this.txtDiscciplina);
+            this.Controls.Add(this.txtEvento);
             this.Controls.Add(this.panel1);
             this.Name = "CadastrarEventosView";
             this.Text = "ProvasView";
@@ -388,7 +425,7 @@
         #endregion
 
         private Panel panel1;
-        private CustomControls.RJControls.RJTextBox txtDisciplina;
+        private CustomControls.RJControls.RJTextBox txtEvento;
         private Label label1;
         private CustomControls.RJControls.RJTextBox txtHora;
         private Label label3;
@@ -405,5 +442,7 @@
         private Label label2;
         private MaskedTextBox txtMdata;
         private MaskedTextBox txtMhora;
+        private CustomControls.RJControls.RJTextBox txtDiscciplina;
+        private Label label8;
     }
 }

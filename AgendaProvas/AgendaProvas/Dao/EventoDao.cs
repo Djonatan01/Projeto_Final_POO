@@ -25,13 +25,14 @@ namespace AgendaProvas.Dao
         {
             try
             {
-                string sql = @"INSERT INTO eventos (data, hora, disciplina, periodo, curso,sala) 
-                               VALUES (@data, @hora, @disciplina, @periodo, @curso, @sala)";
+                string sql = @"INSERT INTO eventos (data, hora,evento, disciplina, periodo, curso,sala) 
+                               VALUES (@data, @hora,@evento, @disciplina, @periodo, @curso, @sala)";
 
                 MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
 
                 cmdsql.Parameters.AddWithValue("@data", obj.Data);
                 cmdsql.Parameters.AddWithValue("@hora", obj.Hora);
+                cmdsql.Parameters.AddWithValue("@evento", obj.Eventos);
                 cmdsql.Parameters.AddWithValue("@disciplina", obj.Disciplina);
                 cmdsql.Parameters.AddWithValue("@periodo", obj.Periodo);
                 cmdsql.Parameters.AddWithValue("@curso", obj.Curso);
@@ -57,13 +58,14 @@ namespace AgendaProvas.Dao
         {
             try
             {
-                string sql = @"UPDATE eventos set data=@data, hora=@hora, disciplina=@disciplina, periodo=@periodo, curso=@curso, sala=@sala WHERE id = @id";
+                string sql = @"UPDATE eventos set data=@data, hora=@hora, evento=@evento , disciplina=@disciplina, periodo=@periodo, curso=@curso, sala=@sala WHERE id = @id";
 
 
                 MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
 
                 cmdsql.Parameters.AddWithValue("@data", obj.Data);
                 cmdsql.Parameters.AddWithValue("@hora", obj.Hora);
+                cmdsql.Parameters.AddWithValue("@evento", obj.Eventos);
                 cmdsql.Parameters.AddWithValue("@disciplina", obj.Disciplina);
                 cmdsql.Parameters.AddWithValue("@periodo", obj.Periodo);
                 cmdsql.Parameters.AddWithValue("@curso", obj.Curso);
@@ -88,7 +90,7 @@ namespace AgendaProvas.Dao
         #endregion
 
         #region Método de excluir
-        public void excluirUsuario(Evento obj)
+        public void excluirEvento(Evento obj)
         {
             try
             {
@@ -143,5 +145,64 @@ namespace AgendaProvas.Dao
 
         #endregion
 
+        #region Método listar eventos por Disciplina 
+        public DataTable listarEventosPorDisciplina(String data)
+        {
+
+            string q = "'" + data + "%" + "'";
+            //Comando SQL
+            string sql = @"SELECT* FROM eventos WHERE data like " + q;
+
+            //Organizar o SQL
+            MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
+
+            //Executar o comando
+            cmdsql.ExecuteNonQuery();
+
+            //Criar DataTable e MySQLDataAdapter
+            DataTable tabelaEvento = new DataTable();
+
+            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmdsql);
+            //Preencher o DataTable
+            dataAdapter.Fill(tabelaEvento);
+
+            //Fechar a conexão
+            Conn.conexao.Close();
+
+            //Retornar tabela com os dados
+            return tabelaEvento;
+        }
+
+        #endregion
+
+        #region Método listar eventos por Disciplina 
+        public DataTable listarEventosPorCorso(String curso)
+        {
+
+            string q = "'" + curso + "%" + "'";
+            //Comando SQL
+            string sql = @"SELECT* FROM eventos WHERE data like " + q;
+
+            //Organizar o SQL
+            MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
+
+            //Executar o comando
+            cmdsql.ExecuteNonQuery();
+
+            //Criar DataTable e MySQLDataAdapter
+            DataTable tabelaEvento = new DataTable();
+
+            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmdsql);
+            //Preencher o DataTable
+            dataAdapter.Fill(tabelaEvento);
+
+            //Fechar a conexão
+            Conn.conexao.Close();
+
+            //Retornar tabela com os dados
+            return tabelaEvento;
+        }
+
+        #endregion
     }
 }

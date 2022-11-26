@@ -11,6 +11,7 @@ namespace AgendaProvas.Model
         private int id;
         private string data;
         private string hora;
+        private string eventos;
         private string disciplina;
         private string periodo;
         private string curso;
@@ -21,6 +22,7 @@ namespace AgendaProvas.Model
         public string Id { get; set; }
         public string Data { get; set; }
         public string Hora { get; set; }
+        public string Eventos { get; set; }
         public string Disciplina { get; set; }
         public string Periodo { get; set; }
         public string Curso { get; set; }

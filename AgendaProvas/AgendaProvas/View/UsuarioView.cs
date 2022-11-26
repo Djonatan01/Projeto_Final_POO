@@ -45,7 +45,7 @@ namespace AgendaProvas
         private void btAlterar_Click(object sender, EventArgs e)
         {
             Usuario obj = new Usuario();
-            obj.Id =Convert.ToInt32(txtId.Texts);
+            obj.Id = id;
             obj.Nome = txtNome.Texts;
             obj.Email = txtEmail.Texts;
             obj.Senha = txtSenha.Texts;
@@ -61,7 +61,6 @@ namespace AgendaProvas
         }
         public void LimparForm()
         {
-            txtId.Texts = "";
             txtNome.Texts = "";
             txtEmail.Texts = "";
             txtSenha.Texts = "";
@@ -69,13 +68,6 @@ namespace AgendaProvas
             cbNivelAcesso.Texts = "";
             cbPeriodo.Texts = "";
             cbCurso.Texts = "";
-        }
-
-        private void btConsultar_Click(object sender, EventArgs e) 
-        {         
-
-
-
         }
 
         private void menuCadastrar_Click(object sender, EventArgs e)
@@ -86,9 +78,6 @@ namespace AgendaProvas
         public void menuCadastrar_Click()
         {
             // Visualizar os campos
-            txtId.Enabled = false;
-            btConsultar.Visible = false;
-            txtId.Visible = true;
             dgUsuario.Visible = false;
             btAlterar.Visible = true;
             btExcluir.Visible = true;
@@ -112,10 +101,7 @@ namespace AgendaProvas
         public void menuConsultar_Click()
         {
             // Ocultar os campos
-            lbId.Visible = false;
-            txtId.Visible = false;
             dgUsuario.Visible = true;
-            btConsultar.Visible = true;
             btAlterar.Visible = false;
             btExcluir.Visible = false;
             btcadastrar.Visible = false;
@@ -124,7 +110,6 @@ namespace AgendaProvas
             cbNivelAcesso.Visible = false;
             cbPeriodo.Visible = false;
             cbCurso.Visible = false;
-            txtId.Texts = "";
             txtMatricula.Texts = "";
             txtNome.Texts = "";
         }
@@ -138,7 +123,7 @@ namespace AgendaProvas
 
         private void dgUsuario_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtId.Texts = dgUsuario.CurrentRow.Cells[0].Value.ToString();
+            id = Convert.ToInt32(dgUsuario.CurrentRow.Cells[0].Value.ToString());
             txtNome.Texts = dgUsuario.CurrentRow.Cells[1].Value.ToString();
             lbUsuario.Text = dgUsuario.CurrentRow.Cells[1].Value.ToString();
             txtEmail.Texts = dgUsuario.CurrentRow.Cells[2].Value.ToString();
@@ -154,7 +139,7 @@ namespace AgendaProvas
         {
             Usuario obj = new Usuario();
 
-            obj.Id = Convert.ToInt32(txtId.Texts);
+            obj.Id = id;
 
             UsuarioDao dao = new UsuarioDao();
             dao.excluirUsuario(obj);
@@ -181,7 +166,26 @@ namespace AgendaProvas
             this.Hide();
         }
 
+        private void txtNome__TextChanged(object sender, EventArgs e)
+        {
+            if (txtNome.Texts == "")
+            {
+                //implementar o método listar
+                UsuarioDao dao = new UsuarioDao();
+                dgUsuario.DataSource = dao.listarUsuarios();
+            }
+            else
+            {
+                String nome = txtNome.Texts;
+
+                UsuarioDao dao = new UsuarioDao();
+                dgUsuario.DataSource = dao.listarUsuariosNome(nome);
+            }
+        }
+
         private void Cadastro_FormClosing(object sender, FormClosingEventArgs e)
-        {Application.Exit();}
+        {
+            Application.Exit();
+        }
     }
 }

@@ -37,10 +37,8 @@
             this.txtSenha = new CustomControls.RJControls.RJTextBox();
             this.txtMatricula = new CustomControls.RJControls.RJTextBox();
             this.btcadastrar = new AgendaProvas.RJButton();
-            this.btConsultar = new AgendaProvas.RJButton();
             this.btExcluir = new AgendaProvas.RJButton();
             this.btAlterar = new AgendaProvas.RJButton();
-            this.txtId = new CustomControls.RJControls.RJTextBox();
             this.mnOpcao = new System.Windows.Forms.MenuStrip();
             this.menuCadastrar = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultar = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +51,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.lbId = new System.Windows.Forms.Label();
             this.cbNivelAcesso = new CustomControls.RJControls.RJComboBox();
             this.dgUsuario = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
@@ -113,7 +110,7 @@
             this.txtNome.BorderSize = 2;
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtNome.ForeColor = System.Drawing.Color.White;
-            this.txtNome.Location = new System.Drawing.Point(13, 244);
+            this.txtNome.Location = new System.Drawing.Point(13, 91);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Multiline = false;
             this.txtNome.Name = "txtNome";
@@ -125,6 +122,7 @@
             this.txtNome.TabIndex = 3;
             this.txtNome.Texts = "";
             this.txtNome.UnderlinedStyle = false;
+            this.txtNome._TextChanged += new System.EventHandler(this.txtNome__TextChanged);
             // 
             // txtEmail
             // 
@@ -135,7 +133,7 @@
             this.txtEmail.BorderSize = 2;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(11, 300);
+            this.txtEmail.Location = new System.Drawing.Point(11, 217);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
@@ -157,7 +155,7 @@
             this.txtSenha.BorderSize = 2;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtSenha.ForeColor = System.Drawing.Color.White;
-            this.txtSenha.Location = new System.Drawing.Point(11, 356);
+            this.txtSenha.Location = new System.Drawing.Point(11, 273);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Multiline = false;
             this.txtSenha.Name = "txtSenha";
@@ -180,7 +178,7 @@
             this.txtMatricula.BorderSize = 2;
             this.txtMatricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMatricula.ForeColor = System.Drawing.Color.White;
-            this.txtMatricula.Location = new System.Drawing.Point(13, 188);
+            this.txtMatricula.Location = new System.Drawing.Point(13, 151);
             this.txtMatricula.Margin = new System.Windows.Forms.Padding(4);
             this.txtMatricula.Multiline = false;
             this.txtMatricula.Name = "txtMatricula";
@@ -205,7 +203,7 @@
             this.btcadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btcadastrar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btcadastrar.ForeColor = System.Drawing.Color.White;
-            this.btcadastrar.Location = new System.Drawing.Point(8, 591);
+            this.btcadastrar.Location = new System.Drawing.Point(8, 487);
             this.btcadastrar.Name = "btcadastrar";
             this.btcadastrar.Size = new System.Drawing.Size(100, 30);
             this.btcadastrar.TabIndex = 7;
@@ -213,26 +211,6 @@
             this.btcadastrar.TextColor = System.Drawing.Color.White;
             this.btcadastrar.UseVisualStyleBackColor = false;
             this.btcadastrar.Click += new System.EventHandler(this.btcadastrar_Click);
-            // 
-            // btConsultar
-            // 
-            this.btConsultar.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btConsultar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btConsultar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btConsultar.BorderRadius = 5;
-            this.btConsultar.BorderSize = 0;
-            this.btConsultar.FlatAppearance.BorderSize = 0;
-            this.btConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btConsultar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btConsultar.ForeColor = System.Drawing.Color.White;
-            this.btConsultar.Location = new System.Drawing.Point(542, 82);
-            this.btConsultar.Name = "btConsultar";
-            this.btConsultar.Size = new System.Drawing.Size(100, 30);
-            this.btConsultar.TabIndex = 8;
-            this.btConsultar.Text = "Consultar";
-            this.btConsultar.TextColor = System.Drawing.Color.White;
-            this.btConsultar.UseVisualStyleBackColor = false;
-            this.btConsultar.Click += new System.EventHandler(this.btConsultar_Click);
             // 
             // btExcluir
             // 
@@ -245,7 +223,7 @@
             this.btExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btExcluir.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btExcluir.ForeColor = System.Drawing.Color.White;
-            this.btExcluir.Location = new System.Drawing.Point(111, 591);
+            this.btExcluir.Location = new System.Drawing.Point(111, 487);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(100, 30);
             this.btExcluir.TabIndex = 9;
@@ -265,37 +243,14 @@
             this.btAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAlterar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btAlterar.ForeColor = System.Drawing.Color.White;
-            this.btAlterar.Location = new System.Drawing.Point(217, 591);
+            this.btAlterar.Location = new System.Drawing.Point(217, 487);
             this.btAlterar.Name = "btAlterar";
             this.btAlterar.Size = new System.Drawing.Size(100, 30);
             this.btAlterar.TabIndex = 10;
-            this.btAlterar.Text = "Alterar";
+            this.btAlterar.Text = "Editar";
             this.btAlterar.TextColor = System.Drawing.Color.White;
             this.btAlterar.UseVisualStyleBackColor = false;
             this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
-            // 
-            // txtId
-            // 
-            this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.txtId.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtId.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtId.BorderRadius = 10;
-            this.txtId.BorderSize = 2;
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtId.ForeColor = System.Drawing.Color.White;
-            this.txtId.Location = new System.Drawing.Point(12, 132);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtId.Multiline = false;
-            this.txtId.Name = "txtId";
-            this.txtId.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtId.PasswordChar = false;
-            this.txtId.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtId.PlaceholderText = "";
-            this.txtId.Size = new System.Drawing.Size(78, 31);
-            this.txtId.TabIndex = 1;
-            this.txtId.TabStop = false;
-            this.txtId.Texts = "";
-            this.txtId.UnderlinedStyle = false;
             // 
             // mnOpcao
             // 
@@ -338,7 +293,7 @@
             "EVENT"});
             this.cbCurso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cbCurso.ListTextColor = System.Drawing.Color.DimGray;
-            this.cbCurso.Location = new System.Drawing.Point(11, 517);
+            this.cbCurso.Location = new System.Drawing.Point(11, 434);
             this.cbCurso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbCurso.Name = "cbCurso";
             this.cbCurso.Padding = new System.Windows.Forms.Padding(1);
@@ -351,7 +306,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 497);
+            this.label1.Location = new System.Drawing.Point(11, 414);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 15;
@@ -376,7 +331,7 @@
             "6° Semestre"});
             this.cbPeriodo.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cbPeriodo.ListTextColor = System.Drawing.Color.DimGray;
-            this.cbPeriodo.Location = new System.Drawing.Point(11, 464);
+            this.cbPeriodo.Location = new System.Drawing.Point(11, 381);
             this.cbPeriodo.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbPeriodo.Name = "cbPeriodo";
             this.cbPeriodo.Padding = new System.Windows.Forms.Padding(1);
@@ -390,7 +345,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 444);
+            this.label2.Location = new System.Drawing.Point(13, 361);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 15;
@@ -402,7 +357,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 391);
+            this.label3.Location = new System.Drawing.Point(13, 308);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 17);
             this.label3.TabIndex = 15;
@@ -414,7 +369,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 335);
+            this.label4.Location = new System.Drawing.Point(13, 252);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 17);
             this.label4.TabIndex = 15;
@@ -426,7 +381,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(13, 279);
+            this.label5.Location = new System.Drawing.Point(13, 196);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 17);
             this.label5.TabIndex = 15;
@@ -438,7 +393,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(13, 223);
+            this.label6.Location = new System.Drawing.Point(13, 70);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 17);
             this.label6.TabIndex = 15;
@@ -450,23 +405,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(13, 167);
+            this.label7.Location = new System.Drawing.Point(13, 130);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 17);
             this.label7.TabIndex = 15;
             this.label7.Text = "RA/Matricula:";
-            // 
-            // lbId
-            // 
-            this.lbId.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
-            this.lbId.AutoSize = true;
-            this.lbId.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbId.ForeColor = System.Drawing.Color.White;
-            this.lbId.Location = new System.Drawing.Point(13, 111);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(23, 17);
-            this.lbId.TabIndex = 15;
-            this.lbId.Text = "Id:";
             // 
             // cbNivelAcesso
             // 
@@ -483,7 +426,7 @@
             "Aluno"});
             this.cbNivelAcesso.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
             this.cbNivelAcesso.ListTextColor = System.Drawing.Color.DimGray;
-            this.cbNivelAcesso.Location = new System.Drawing.Point(12, 411);
+            this.cbNivelAcesso.Location = new System.Drawing.Point(12, 328);
             this.cbNivelAcesso.MinimumSize = new System.Drawing.Size(200, 30);
             this.cbNivelAcesso.Name = "cbNivelAcesso";
             this.cbNivelAcesso.Padding = new System.Windows.Forms.Padding(1);
@@ -496,10 +439,10 @@
             this.dgUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgUsuario.Location = new System.Drawing.Point(8, 279);
+            this.dgUsuario.Location = new System.Drawing.Point(9, 130);
             this.dgUsuario.Name = "dgUsuario";
             this.dgUsuario.RowTemplate.Height = 25;
-            this.dgUsuario.Size = new System.Drawing.Size(850, 286);
+            this.dgUsuario.Size = new System.Drawing.Size(850, 334);
             this.dgUsuario.TabIndex = 13;
             this.dgUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUsuario_CellClick);
             // 
@@ -508,9 +451,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(875, 633);
+            this.ClientSize = new System.Drawing.Size(875, 539);
             this.Controls.Add(this.dgUsuario);
-            this.Controls.Add(this.lbId);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -523,12 +465,10 @@
             this.Controls.Add(this.cbCurso);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btExcluir);
-            this.Controls.Add(this.btConsultar);
             this.Controls.Add(this.btcadastrar);
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.mnOpcao);
             this.Controls.Add(this.panel1);
@@ -557,10 +497,8 @@
         private CustomControls.RJControls.RJTextBox txtSenha;
         private CustomControls.RJControls.RJTextBox txtMatricula;
         private RJButton btcadastrar;
-        private RJButton btConsultar;
         private RJButton btExcluir;
         private RJButton btAlterar;
-        private CustomControls.RJControls.RJTextBox txtId;
         private MenuStrip mnOpcao;
         private ToolStripMenuItem menuCadastrar;
         private ToolStripMenuItem menuConsultar;
@@ -573,7 +511,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private Label lbId;
         private CustomControls.RJControls.RJComboBox cbNivelAcesso;
         private DataGridView dgUsuario;
         private RJButton btVoltar;

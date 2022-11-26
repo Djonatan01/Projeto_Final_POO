@@ -14,10 +14,11 @@ namespace AgendaProvas.View
 {
     public partial class CadastrarEventosView : Form
     {
-        int id;
+        int id = 0;
         public CadastrarEventosView()
         {
             InitializeComponent();
+
         }
 
         private void btVoltar_Click(object sender, EventArgs e)
@@ -39,7 +40,8 @@ namespace AgendaProvas.View
             id = Convert.ToInt32(obj.Id.ToString());
             txtMdata.Text = obj.Data.ToString();
             txtMhora.Text = obj.Hora.ToString();
-            txtDisciplina.Texts = obj.Disciplina.ToString();
+            txtEvento.Texts = obj.Eventos.ToString();
+            txtDiscciplina.Texts = obj.Disciplina.ToString();
             cbPeriodo.Texts = obj.Periodo.ToString();
             cbCurso.Texts = obj.Curso.ToString();
             cbSala.Texts = obj.Sala.ToString();               
@@ -51,22 +53,30 @@ namespace AgendaProvas.View
             Evento obj = new Evento();
             obj.Data = txtMdata.Text;
             obj.Hora = txtMhora.Text;
-            obj.Disciplina = txtDisciplina.Texts;
+            obj.Eventos = txtEvento.Texts;
+            obj.Disciplina = txtDiscciplina.Texts;
             obj.Periodo = cbPeriodo.Texts;
             obj.Curso = cbCurso.Texts;
             obj.Sala = cbSala.Texts;
 
             EventoDao dao = new EventoDao();
-            if (id.Equals(""))
+            if (id == 0 )
             {
                 dao.cadastrarEvento(obj);
+                ProvasView retonar = new ProvasView();
+                retonar.Show();
+                this.Hide();
             }
             else
             {
                 obj.Id = Convert.ToString(id);
                 dao.alterarEvento(obj);
+
+                ProvasView retonar = new  ProvasView();
+                retonar.Show();
+                this.Hide();
             }
-            
         }
+
     }
 }

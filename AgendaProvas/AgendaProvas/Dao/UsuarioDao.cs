@@ -1,4 +1,5 @@
 ﻿using AgendaProvas.Model;
+using AgendaProvas.View;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -16,7 +18,7 @@ namespace AgendaProvas.Dao
 {
     public class UsuarioDao
     {
-        public bool check;
+        public string check;
         #region Método conectar Banco de dados
         public UsuarioDao() 
         {
@@ -148,10 +150,40 @@ namespace AgendaProvas.Dao
 
         #endregion
 
-        #region Método login
-        public bool login(string emailLogin, string senhaLogin)
+        #region Método listar usuarios nome
+        public DataTable listarUsuariosNome(String nome)
         {
+            //Comando SQL
+            string q = "'" + nome + "%" + "'";
+            //Comando SQL
+            string sql = @"SELECT* FROM usuarios WHERE nome like " + q;
 
+            //Organizar o SQL
+            MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
+
+            //Executar o comando
+            cmdsql.ExecuteNonQuery();
+
+            //Criar DataTable e MySQLDataAdapter
+            DataTable tabelaUsuario = new DataTable();
+
+            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmdsql);
+            //Preencher o DataTable
+            dataAdapter.Fill(tabelaUsuario);
+
+            //Fechar a conexão
+            Conn.conexao.Close();
+
+            //Retornar tabela com os dados
+            return tabelaUsuario;
+        }
+
+        #endregion
+
+        #region Método login
+        public String login(string emailLogin, string senhaLogin)
+        {
+            
             ArrayList lst_contato = new ArrayList();
 
             try
@@ -170,17 +202,19 @@ namespace AgendaProvas.Dao
                     string tipo = reader.GetString(5);
                     if (tipo.Equals("Professor")) 
                     {
-                        check = true; 
+                        check = "3"; 
                     }else if(tipo.Equals("admin"))
                     {
-                        check = true;
+                        check = "0";
+                    }
+                    else
+                    {
+                        check = "1/" + reader.GetString(7);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Usuário não cadastrado entrar em contato com o Admin ",
-                        "Erro de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Application.Exit();
+                    check = "4";
                 }
             }
             catch (Exception e)
