@@ -107,6 +107,7 @@ namespace AgendaProvas
             //implementar o método listar
             UsuarioDao dao = new UsuarioDao();
             dgUsuario.DataSource = dao.listarUsuarios();
+            
         }
         public void menuConsultar_Click()
         {

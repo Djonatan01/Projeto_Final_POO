@@ -26,7 +26,7 @@ namespace AgendaProvas.Dao
             try
             {
                 string sql = @"INSERT INTO eventos (data, hora, disciplina, periodo, curso,sala) 
-                               VALUES (@data, @hora, @disciplina, @periodo, @curso,@sala)";
+                               VALUES (@data, @hora, @disciplina, @periodo, @curso, @sala)";
 
                 MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
 
@@ -47,7 +47,7 @@ namespace AgendaProvas.Dao
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro de cadastro entrar em contato com o Admin ", "Erro de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro de cadastro entrar em contato com o Admin " + ex, "Erro de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

@@ -1,3 +1,5 @@
+using AgendaProvas.View;
+
 namespace AgendaProvas
 {
     internal static class Program
@@ -12,6 +14,7 @@ namespace AgendaProvas
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
+            
         }
     }
 }

@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AgendaProvas.Dao;
+using AgendaProvas.Model;
 
 namespace AgendaProvas.View
 {
@@ -15,8 +17,10 @@ namespace AgendaProvas.View
         public ProvasView()
         {
             InitializeComponent();
+            EventoDao dao = new EventoDao();
+            dgProvas.DataSource = dao.listarEventos();
         }
-
+        
         private void ProvasView_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();

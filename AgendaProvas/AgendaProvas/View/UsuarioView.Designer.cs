@@ -495,7 +495,7 @@
             // 
             this.dgUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgUsuario.Location = new System.Drawing.Point(111, 282);
+            this.dgUsuario.Location = new System.Drawing.Point(8, 279);
             this.dgUsuario.Name = "dgUsuario";
             this.dgUsuario.RowTemplate.Height = 25;
             this.dgUsuario.Size = new System.Drawing.Size(850, 286);

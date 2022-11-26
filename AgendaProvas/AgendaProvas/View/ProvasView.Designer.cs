@@ -45,7 +45,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(664, 42);
+            this.panel1.Size = new System.Drawing.Size(757, 42);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -53,7 +53,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(245, 9);
+            this.label1.Location = new System.Drawing.Point(307, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 25);
             this.label1.TabIndex = 0;
@@ -63,10 +63,11 @@
             // 
             this.dgProvas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgProvas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgProvas.Location = new System.Drawing.Point(10, 60);
+            this.dgProvas.GridColor = System.Drawing.Color.Black;
+            this.dgProvas.Location = new System.Drawing.Point(12, 60);
             this.dgProvas.Name = "dgProvas";
             this.dgProvas.RowTemplate.Height = 25;
-            this.dgProvas.Size = new System.Drawing.Size(640, 377);
+            this.dgProvas.Size = new System.Drawing.Size(730, 377);
             this.dgProvas.TabIndex = 2;
             // 
             // btCadastrar
@@ -80,7 +81,7 @@
             this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastrar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btCadastrar.Location = new System.Drawing.Point(195, 443);
+            this.btCadastrar.Location = new System.Drawing.Point(245, 443);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(120, 40);
             this.btCadastrar.TabIndex = 5;
@@ -100,7 +101,7 @@
             this.btAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAdicionar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btAdicionar.ForeColor = System.Drawing.Color.White;
-            this.btAdicionar.Location = new System.Drawing.Point(367, 443);
+            this.btAdicionar.Location = new System.Drawing.Point(417, 443);
             this.btAdicionar.Name = "btAdicionar";
             this.btAdicionar.Size = new System.Drawing.Size(108, 40);
             this.btAdicionar.TabIndex = 5;
@@ -114,7 +115,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(664, 514);
+            this.ClientSize = new System.Drawing.Size(757, 514);
             this.Controls.Add(this.btAdicionar);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.dgProvas);
