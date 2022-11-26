@@ -34,7 +34,10 @@ namespace AgendaProvas.View
 
             this.Hide();
         }
-
+        private void btEditar_Click(object sender, EventArgs e)
+        {
+            //txtId.Texts = dgUsuario.CurrentRow.Cells[0].Value.ToString();
+        }
         private void btAdicionar_Click(object sender, EventArgs e)
         {
             CadastrarEventosView cadEvento = new CadastrarEventosView();
@@ -43,5 +46,11 @@ namespace AgendaProvas.View
 
             this.Hide();
         }
+
+        private void dgProvas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }

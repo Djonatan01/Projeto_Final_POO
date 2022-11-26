@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adati\\Documents\\Github\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {}
+    "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adati\\Documents\\Github\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {
+    "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adati\\Documents\\Github\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
+        "projectUniqueName": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
         "projectName": "AgendaProvas",
-        "projectPath": "C:\\Users\\adati\\Documents\\Github\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
-        "packagesPath": "C:\\Users\\adati\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adati\\Documents\\Github\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\obj\\",
+        "projectPath": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\AgendaProvas.csproj",
+        "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Projeto_Final_POO\\AgendaProvas\\AgendaProvas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adati\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

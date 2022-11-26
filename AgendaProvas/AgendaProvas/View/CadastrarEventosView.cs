@@ -35,9 +35,10 @@ namespace AgendaProvas.View
 
         private void btCadastraEvento_Click(object sender, EventArgs e)
         {
+           
             Evento obj = new Evento();
-            obj.Data = txtData.Texts;
-            obj.Hora = txtHora.Texts;
+            obj.Data = txtMdata.Text;
+            obj.Hora = txtMhora.Text;
             obj.Disciplina = txtDisciplina.Texts;
             obj.Periodo = cbPeriodo.Texts;
             obj.Curso = cbCurso.Texts;

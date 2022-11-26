@@ -494,6 +494,7 @@
             // dgUsuario
             // 
             this.dgUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgUsuario.Location = new System.Drawing.Point(8, 279);
             this.dgUsuario.Name = "dgUsuario";

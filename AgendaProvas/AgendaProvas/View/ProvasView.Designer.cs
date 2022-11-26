@@ -33,6 +33,7 @@
             this.dgProvas = new System.Windows.Forms.DataGridView();
             this.btCadastrar = new AgendaProvas.RJButton();
             this.btAdicionar = new AgendaProvas.RJButton();
+            this.btEditar = new AgendaProvas.RJButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgProvas)).BeginInit();
             this.SuspendLayout();
@@ -62,13 +63,17 @@
             // dgProvas
             // 
             this.dgProvas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgProvas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgProvas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgProvas.GridColor = System.Drawing.Color.Black;
             this.dgProvas.Location = new System.Drawing.Point(12, 60);
             this.dgProvas.Name = "dgProvas";
+            this.dgProvas.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dgProvas.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dgProvas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             this.dgProvas.RowTemplate.Height = 25;
             this.dgProvas.Size = new System.Drawing.Size(730, 377);
             this.dgProvas.TabIndex = 2;
+            this.dgProvas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgProvas_CellContentClick);
             // 
             // btCadastrar
             // 
@@ -81,7 +86,7 @@
             this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastrar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btCadastrar.Location = new System.Drawing.Point(245, 443);
+            this.btCadastrar.Location = new System.Drawing.Point(161, 443);
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(120, 40);
             this.btCadastrar.TabIndex = 5;
@@ -101,7 +106,7 @@
             this.btAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btAdicionar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btAdicionar.ForeColor = System.Drawing.Color.White;
-            this.btAdicionar.Location = new System.Drawing.Point(417, 443);
+            this.btAdicionar.Location = new System.Drawing.Point(435, 443);
             this.btAdicionar.Name = "btAdicionar";
             this.btAdicionar.Size = new System.Drawing.Size(108, 40);
             this.btAdicionar.TabIndex = 5;
@@ -110,6 +115,26 @@
             this.btAdicionar.UseVisualStyleBackColor = false;
             this.btAdicionar.Click += new System.EventHandler(this.btAdicionar_Click);
             // 
+            // btEditar
+            // 
+            this.btEditar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btEditar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btEditar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btEditar.BorderRadius = 15;
+            this.btEditar.BorderSize = 0;
+            this.btEditar.FlatAppearance.BorderSize = 0;
+            this.btEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEditar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btEditar.ForeColor = System.Drawing.Color.White;
+            this.btEditar.Location = new System.Drawing.Point(298, 443);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(120, 40);
+            this.btEditar.TabIndex = 5;
+            this.btEditar.Text = "Editar";
+            this.btEditar.TextColor = System.Drawing.Color.White;
+            this.btEditar.UseVisualStyleBackColor = false;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
+            // 
             // ProvasView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -117,6 +142,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(757, 514);
             this.Controls.Add(this.btAdicionar);
+            this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.dgProvas);
             this.Controls.Add(this.panel1);
@@ -139,5 +165,6 @@
         private DataGridView dgProvas;
         private RJButton btCadastrar;
         private RJButton btAdicionar;
+        private RJButton btEditar;
     }
 }
