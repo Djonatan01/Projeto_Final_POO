@@ -14,6 +14,7 @@ namespace AgendaProvas.View
 {
     public partial class CadastrarEventosView : Form
     {
+        int id;
         public CadastrarEventosView()
         {
             InitializeComponent();
@@ -33,6 +34,17 @@ namespace AgendaProvas.View
             Application.Exit();
         }
 
+        public void receberEdit(Evento obj)
+        {
+            id = Convert.ToInt32(obj.Id.ToString());
+            txtMdata.Text = obj.Data.ToString();
+            txtMhora.Text = obj.Hora.ToString();
+            txtDisciplina.Texts = obj.Disciplina.ToString();
+            cbPeriodo.Texts = obj.Periodo.ToString();
+            cbCurso.Texts = obj.Curso.ToString();
+            cbSala.Texts = obj.Sala.ToString();               
+        }
+
         private void btCadastraEvento_Click(object sender, EventArgs e)
         {
            
@@ -45,8 +57,16 @@ namespace AgendaProvas.View
             obj.Sala = cbSala.Texts;
 
             EventoDao dao = new EventoDao();
-
-            dao.cadastrarEvento(obj);
+            if (id.Equals(""))
+            {
+                dao.cadastrarEvento(obj);
+            }
+            else
+            {
+                obj.Id = Convert.ToString(id);
+                dao.alterarEvento(obj);
+            }
+            
         }
     }
 }

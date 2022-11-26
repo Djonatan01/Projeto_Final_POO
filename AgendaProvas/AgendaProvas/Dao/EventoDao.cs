@@ -53,7 +53,7 @@ namespace AgendaProvas.Dao
         #endregion
 
         #region Método alterar evento
-        public void alterarUsuario(Evento obj)
+        public void alterarEvento(Evento obj)
         {
             try
             {
@@ -68,7 +68,8 @@ namespace AgendaProvas.Dao
                 cmdsql.Parameters.AddWithValue("@periodo", obj.Periodo);
                 cmdsql.Parameters.AddWithValue("@curso", obj.Curso);
                 cmdsql.Parameters.AddWithValue("@sala", obj.Sala);
-                
+                cmdsql.Parameters.AddWithValue("@id", Convert.ToInt32(obj.Id));
+
 
                 //Executar o comando pata inserir dados no banco
                 cmdsql.ExecuteNonQuery();

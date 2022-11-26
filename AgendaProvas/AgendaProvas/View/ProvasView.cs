@@ -36,6 +36,20 @@ namespace AgendaProvas.View
         }
         private void btEditar_Click(object sender, EventArgs e)
         {
+            Evento obj = new Evento();
+            obj.Id = dgProvas.CurrentRow.Cells[0].Value.ToString();
+            obj.Data = dgProvas.CurrentRow.Cells[1].Value.ToString();
+            obj.Hora = dgProvas.CurrentRow.Cells[2].Value.ToString();
+            obj.Disciplina = dgProvas.CurrentRow.Cells[3].Value.ToString();
+            obj.Periodo = dgProvas.CurrentRow.Cells[4].Value.ToString();
+            obj.Curso = dgProvas.CurrentRow.Cells[5].Value.ToString();
+            obj.Sala = dgProvas.CurrentRow.Cells[6].Value.ToString();
+
+            CadastrarEventosView cad = new CadastrarEventosView();
+            cad.receberEdit(obj);
+            cad.Show();
+            this.Hide();
+
             //txtId.Texts = dgUsuario.CurrentRow.Cells[0].Value.ToString();
         }
         private void btAdicionar_Click(object sender, EventArgs e)
