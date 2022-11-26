@@ -41,9 +41,9 @@ namespace AgendaProvas
                             break;
 
                         case "1":
-                            prov.Show();
+                            prov.Show();                           
                             this.Hide();
-                            prov.aluno(check[1]);
+                            prov.aluno(check[1]);                           
                             break;
                         case "3":
                             prov.Show();

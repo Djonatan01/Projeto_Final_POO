@@ -175,13 +175,46 @@ namespace AgendaProvas.Dao
 
         #endregion
 
-        #region Método listar eventos por Disciplina 
-        public DataTable listarEventosPorCorso(String curso)
+        #region Método listar eventos por Curso 
+        public DataTable listarEventosPorCurso(String buscaCurso)
         {
+            string curso = buscaCurso.ToUpper();
 
-            string q = "'" + curso + "%" + "'";
+            string q = "'" + curso + "'";
             //Comando SQL
-            string sql = @"SELECT* FROM eventos WHERE data like " + q;
+            string sql = @"SELECT* FROM eventos WHERE curso = " + q;
+
+            //Organizar o SQL
+            MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);
+
+            //Executar o comando
+            cmdsql.ExecuteNonQuery();
+
+            //Criar DataTable e MySQLDataAdapter
+            DataTable tabelaEvento = new DataTable();
+
+            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmdsql);
+            //Preencher o DataTable
+            dataAdapter.Fill(tabelaEvento);
+
+            //Fechar a conexão
+            Conn.conexao.Close();
+
+            //Retornar tabela com os dados
+            return tabelaEvento;
+        }
+
+        #endregion
+
+        #region Método listar eventos por Data e Curso
+        public DataTable listarEventosPorDataCurso(String data, String newCurso)
+        {
+            
+            string curso = newCurso.ToUpper();            
+            string q = "'" + data + "%" + "'";
+            string q2 = "'" + curso + "'";
+            //Comando SQL
+            string sql = @"SELECT* FROM eventos WHERE data like " + q + "AND curso =" + q2 ;
 
             //Organizar o SQL
             MySqlCommand cmdsql = new MySqlCommand(sql, Conn.conexao);

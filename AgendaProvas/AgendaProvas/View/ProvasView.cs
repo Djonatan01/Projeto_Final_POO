@@ -15,9 +15,12 @@ namespace AgendaProvas.View
 {
     public partial class ProvasView : Form
     {
+        
         public object bindingSource { get; private set; }
-        public string retCurso;
-        EventoDao dao = new EventoDao();
+
+        private string retCurso = "";
+
+
         public ProvasView()
         {
             InitializeComponent();
@@ -26,7 +29,11 @@ namespace AgendaProvas.View
         
         public void CarregarEvento()
         {
-            dgProvas.DataSource = dao.listarEventos();
+           
+                EventoDao dao = new EventoDao();
+                dgProvas.DataSource = dao.listarEventos();             
+          
+            
         }
         private void ProvasView_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -83,8 +90,8 @@ namespace AgendaProvas.View
         public void aluno(string tipoCurso)
         {
             retCurso = tipoCurso;
-            
-            dgProvas.DataSource = dao.listarEventosPorCorso(retCurso);
+            EventoDao dao = new EventoDao();
+            dgProvas.DataSource = dao.listarEventosPorCurso(retCurso);
 
             btAdicionar.Visible = false;
             btCadastrar.Visible = false;
@@ -94,6 +101,7 @@ namespace AgendaProvas.View
 
         public void professor()
         {
+            //retCurso = "";
             btCadastrar.Visible = false;
         }
         private void btVoltar_Click(object sender, EventArgs e)
@@ -105,18 +113,38 @@ namespace AgendaProvas.View
 
         private void txtPesquisaData__TextChanged(object sender, EventArgs e)
         {
-            if (txtPesquisaData.Texts == "")
+            if(retCurso == "")
             {
-                EventoDao dao = new EventoDao();
-                dgProvas.DataSource = dao.listarEventos();
+                if (txtPesquisaData.Texts == "")
+                {
+
+                    EventoDao dao = new EventoDao();
+                    dgProvas.DataSource = dao.listarEventos();
+                }
+                else
+                {
+                    String data = txtPesquisaData.Texts;
+
+                    EventoDao dao = new EventoDao();
+                    dgProvas.DataSource = dao.listarEventosPorDisciplina(data);
+                }
             }
             else
             {
-                String data = txtPesquisaData.Texts;
+                if (txtPesquisaData.Texts == "")
+                {
+                    EventoDao dao = new EventoDao();
+                    dgProvas.DataSource = dao.listarEventosPorCurso(retCurso);
+                }
+                else
+                {
+                    String data = txtPesquisaData.Texts;
 
-                EventoDao dao = new EventoDao();
-                dgProvas.DataSource = dao.listarEventosPorDisciplina(data);
+                    EventoDao dao = new EventoDao();
+                    dgProvas.DataSource = dao.listarEventosPorDataCurso(data, retCurso);
+                }
             }
+           
 
         }
     }
