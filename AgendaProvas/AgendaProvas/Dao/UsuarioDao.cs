@@ -51,11 +51,11 @@ namespace AgendaProvas.Dao
                 //Fechar a conexão
                 Conn.conexao.Close();
 
-                MessageBox.Show("Cadastro realizado com sucesso!");
+                MessageBox.Show("Cadastro realizado com sucesso!","Cadastro",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro de cadastro entrar em contato com o Admin ", "Erro de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Matricula já cadastrada " , "Erro de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

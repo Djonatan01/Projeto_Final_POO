@@ -12,7 +12,7 @@ namespace AgendaProvas.Model
         private string nome;
         private string email;
         private string senha;
-        private int matricula;
+        private string matricula;
         private string tipo;
         private string periodo;
         private string curso;
@@ -23,7 +23,7 @@ namespace AgendaProvas.Model
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
-        public int Matricula { get; set; }
+        public string Matricula { get; set; }
         public string Tipo { get ; set; }
         public string Periodo { get; set; }
         public string Curso { get; set; }

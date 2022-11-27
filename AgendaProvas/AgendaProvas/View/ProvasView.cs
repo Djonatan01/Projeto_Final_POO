@@ -29,11 +29,8 @@ namespace AgendaProvas.View
         
         public void CarregarEvento()
         {
-           
-                EventoDao dao = new EventoDao();
-                dgProvas.DataSource = dao.listarEventos();             
-          
-            
+            EventoDao dao = new EventoDao();
+            dgProvas.DataSource = dao.listarEventos();             
         }
         private void ProvasView_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -48,8 +45,12 @@ namespace AgendaProvas.View
 
             this.Hide();
         }
+        #region botão exluir
         private void btExcluir_Click(object sender, EventArgs e)
         {
+            DialogResult resposta = MessageBox.Show("Deseja realmente excluir?","Excluir",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if(resposta.ToString().Equals("Yes")) {  
+
             Evento obj = new Evento();
             obj.Id = dgProvas.CurrentRow.Cells[0].Value.ToString();
 
@@ -58,26 +59,33 @@ namespace AgendaProvas.View
             dao.excluirEvento(obj);
 
             CarregarEvento();
+            }
         }
+        #endregion
 
+        #region botão editar
         private void btEditar_Click(object sender, EventArgs e)
         {
-            Evento obj = new Evento();
-            obj.Id = dgProvas.CurrentRow.Cells[0].Value.ToString();
-            obj.Data = dgProvas.CurrentRow.Cells[1].Value.ToString();
-            obj.Hora = dgProvas.CurrentRow.Cells[2].Value.ToString();
-            obj.Eventos = dgProvas.CurrentRow.Cells[3].Value.ToString();
-            obj.Disciplina = dgProvas.CurrentRow.Cells[4].Value.ToString();
-            obj.Periodo = dgProvas.CurrentRow.Cells[5].Value.ToString();
-            obj.Curso = dgProvas.CurrentRow.Cells[6].Value.ToString();
-            obj.Sala = dgProvas.CurrentRow.Cells[7].Value.ToString();
+            DialogResult resposta = MessageBox.Show("Deseja realmente alterar?", "Alteração", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta.ToString().Equals("Yes"))
+            {
+                Evento obj = new Evento();
+                obj.Id = dgProvas.CurrentRow.Cells[0].Value.ToString();
+                obj.Data = dgProvas.CurrentRow.Cells[1].Value.ToString();
+                obj.Hora = dgProvas.CurrentRow.Cells[2].Value.ToString();
+                obj.Eventos = dgProvas.CurrentRow.Cells[3].Value.ToString();
+                obj.Disciplina = dgProvas.CurrentRow.Cells[4].Value.ToString();
+                obj.Periodo = dgProvas.CurrentRow.Cells[5].Value.ToString();
+                obj.Curso = dgProvas.CurrentRow.Cells[6].Value.ToString();
+                obj.Sala = dgProvas.CurrentRow.Cells[7].Value.ToString();
 
-            CadastrarEventosView cad = new CadastrarEventosView();
-            cad.receberEdit(obj);
-            cad.Show();
-            this.Hide();
+                CadastrarEventosView cad = new CadastrarEventosView();
+                cad.receberEdit(obj);
+                cad.Show();
+                this.Hide();
+            }
         }
-
+        #endregion
         private void btAdicionar_Click(object sender, EventArgs e)
         {
             CadastrarEventosView cadEvento = new CadastrarEventosView();
@@ -86,7 +94,7 @@ namespace AgendaProvas.View
 
             this.Hide();
         }
-
+        #region Ocultar botões aluno
         public void aluno(string tipoCurso)
         {
             retCurso = tipoCurso;
@@ -98,19 +106,13 @@ namespace AgendaProvas.View
             btEditar.Visible = false;
             btExcluir.Visible = false;
         }
-
+        #endregion
         public void professor()
         {
             //retCurso = "";
             btCadastrar.Visible = false;
         }
-        private void btVoltar_Click(object sender, EventArgs e)
-        {
-            Login voltaLogin = new Login();
-            voltaLogin.Show();
-            this.Hide();
-        }
-
+        #region Filtrar por disciplina / curso
         private void txtPesquisaData__TextChanged(object sender, EventArgs e)
         {
             if(retCurso == "")
@@ -144,8 +146,20 @@ namespace AgendaProvas.View
                     dgProvas.DataSource = dao.listarEventosPorDataCurso(data, retCurso);
                 }
             }
-           
-
         }
+        #endregion
+
+        #region botão logoff
+        private void btLogoff_Click(object sender, EventArgs e)
+        {
+            DialogResult resposta = MessageBox.Show("Deseja realmente fazer logoff?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta.ToString().Equals("Yes"))
+            {
+                Login logoff = new Login();
+                logoff.Show();
+                this.Hide();
+            }
+        }
+        #endregion
     }
 }

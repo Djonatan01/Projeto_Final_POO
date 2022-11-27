@@ -20,7 +20,21 @@ namespace AgendaProvas.View
             InitializeComponent();
 
         }
-
+        private bool verificaCampos()
+        {
+            bool resultado = true;
+            if (String.IsNullOrEmpty(txtDiscciplina.Texts) ||
+                String.IsNullOrEmpty(txtEvento.Texts) ||
+                String.IsNullOrEmpty(txtMdata.Text) ||
+                String.IsNullOrEmpty(cbCurso.Text) ||
+                String.IsNullOrEmpty(cbPeriodo.Text) ||
+                String.IsNullOrEmpty(cbSala.Text) ||
+                String.IsNullOrEmpty(txtMhora.Text))
+            {
+                resultado = false;
+            }
+            return resultado;
+        }
         private void btVoltar_Click(object sender, EventArgs e)
         {
             ProvasView voltar = new ProvasView();
@@ -34,7 +48,7 @@ namespace AgendaProvas.View
         {
             Application.Exit();
         }
-
+        #region botão editar evento
         public void receberEdit(Evento obj)
         {
             id = Convert.ToInt32(obj.Id.ToString());
@@ -44,39 +58,47 @@ namespace AgendaProvas.View
             txtDiscciplina.Texts = obj.Disciplina.ToString();
             cbPeriodo.Texts = obj.Periodo.ToString();
             cbCurso.Texts = obj.Curso.ToString();
-            cbSala.Texts = obj.Sala.ToString();               
+            cbSala.Texts = obj.Sala.ToString();
         }
+        #endregion
 
+        #region cadastrar evento
         private void btCadastraEvento_Click(object sender, EventArgs e)
         {
-           
-            Evento obj = new Evento();
-            obj.Data = txtMdata.Text;
-            obj.Hora = txtMhora.Text;
-            obj.Eventos = txtEvento.Texts;
-            obj.Disciplina = txtDiscciplina.Texts;
-            obj.Periodo = cbPeriodo.Texts;
-            obj.Curso = cbCurso.Texts;
-            obj.Sala = cbSala.Texts;
-
-            EventoDao dao = new EventoDao();
-            if (id == 0 )
+            if (verificaCampos())
             {
-                dao.cadastrarEvento(obj);
-                ProvasView retonar = new ProvasView();
-                retonar.Show();
-                this.Hide();
+                Evento obj = new Evento();
+                obj.Data = txtMdata.Text;
+                obj.Hora = txtMhora.Text;
+                obj.Eventos = txtEvento.Texts;
+                obj.Disciplina = txtDiscciplina.Texts;
+                obj.Periodo = cbPeriodo.Texts;
+                obj.Curso = cbCurso.Texts;
+                obj.Sala = cbSala.Texts;
+
+                EventoDao dao = new EventoDao();
+                if (id == 0)
+                {
+                    dao.cadastrarEvento(obj);
+                    ProvasView retonar = new ProvasView();
+                    retonar.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    obj.Id = Convert.ToString(id);
+                    dao.alterarEvento(obj);
+
+                    ProvasView retonar = new ProvasView();
+                    retonar.Show();
+                    this.Hide();
+                }
             }
             else
             {
-                obj.Id = Convert.ToString(id);
-                dao.alterarEvento(obj);
-
-                ProvasView retonar = new  ProvasView();
-                retonar.Show();
-                this.Hide();
+                MessageBox.Show("Todos os campos obrigatórios devem ser preechidos", "Campos vazios", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        #endregion
     }
 }

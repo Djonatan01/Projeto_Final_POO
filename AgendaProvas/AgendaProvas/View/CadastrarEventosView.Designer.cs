@@ -412,6 +412,7 @@
             this.Controls.Add(this.txtDiscciplina);
             this.Controls.Add(this.txtEvento);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "CadastrarEventosView";
             this.Text = "ProvasView";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadastrarEventosView_FormClosing);

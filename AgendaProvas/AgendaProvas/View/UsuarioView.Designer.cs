@@ -53,6 +53,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cbNivelAcesso = new CustomControls.RJControls.RJComboBox();
             this.dgUsuario = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.mnOpcao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgUsuario)).BeginInit();
@@ -119,7 +120,7 @@
             this.txtNome.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtNome.PlaceholderText = "";
             this.txtNome.Size = new System.Drawing.Size(250, 31);
-            this.txtNome.TabIndex = 3;
+            this.txtNome.TabIndex = 1;
             this.txtNome.Texts = "";
             this.txtNome.UnderlinedStyle = false;
             this.txtNome._TextChanged += new System.EventHandler(this.txtNome__TextChanged);
@@ -142,7 +143,7 @@
             this.txtEmail.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtEmail.PlaceholderText = "";
             this.txtEmail.Size = new System.Drawing.Size(250, 31);
-            this.txtEmail.TabIndex = 4;
+            this.txtEmail.TabIndex = 3;
             this.txtEmail.Texts = "";
             this.txtEmail.UnderlinedStyle = false;
             // 
@@ -164,7 +165,7 @@
             this.txtSenha.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSenha.PlaceholderText = "";
             this.txtSenha.Size = new System.Drawing.Size(250, 31);
-            this.txtSenha.TabIndex = 5;
+            this.txtSenha.TabIndex = 4;
             this.txtSenha.Texts = "";
             this.txtSenha.UnderlinedStyle = false;
             // 
@@ -206,7 +207,7 @@
             this.btcadastrar.Location = new System.Drawing.Point(8, 487);
             this.btcadastrar.Name = "btcadastrar";
             this.btcadastrar.Size = new System.Drawing.Size(100, 30);
-            this.btcadastrar.TabIndex = 7;
+            this.btcadastrar.TabIndex = 8;
             this.btcadastrar.Text = "Cadastrar";
             this.btcadastrar.TextColor = System.Drawing.Color.White;
             this.btcadastrar.UseVisualStyleBackColor = false;
@@ -298,7 +299,7 @@
             this.cbCurso.Name = "cbCurso";
             this.cbCurso.Padding = new System.Windows.Forms.Padding(1);
             this.cbCurso.Size = new System.Drawing.Size(200, 30);
-            this.cbCurso.TabIndex = 14;
+            this.cbCurso.TabIndex = 7;
             this.cbCurso.Texts = "";
             // 
             // label1
@@ -308,9 +309,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 414);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Curso:";
+            this.label1.Size = new System.Drawing.Size(56, 17);
+            this.label1.TabIndex = 100;
+            this.label1.Text = "Curso: *";
             // 
             // cbPeriodo
             // 
@@ -336,7 +337,7 @@
             this.cbPeriodo.Name = "cbPeriodo";
             this.cbPeriodo.Padding = new System.Windows.Forms.Padding(1);
             this.cbPeriodo.Size = new System.Drawing.Size(200, 30);
-            this.cbPeriodo.TabIndex = 14;
+            this.cbPeriodo.TabIndex = 6;
             this.cbPeriodo.Texts = "";
             // 
             // label2
@@ -347,9 +348,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 361);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 17);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Período:";
+            this.label2.Size = new System.Drawing.Size(68, 17);
+            this.label2.TabIndex = 100;
+            this.label2.Text = "Período: *";
             // 
             // label3
             // 
@@ -359,9 +360,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(13, 308);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 17);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Nivel de Acesso";
+            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.TabIndex = 100;
+            this.label3.Text = "Nivel de Acesso: *";
             // 
             // label4
             // 
@@ -371,9 +372,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(13, 252);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 17);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Senha:";
+            this.label4.Size = new System.Drawing.Size(58, 17);
+            this.label4.TabIndex = 100;
+            this.label4.Text = "Senha: *";
             // 
             // label5
             // 
@@ -383,9 +384,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(13, 196);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 17);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "E-mail:";
+            this.label5.Size = new System.Drawing.Size(58, 17);
+            this.label5.TabIndex = 100;
+            this.label5.Text = "E-mail: *";
             // 
             // label6
             // 
@@ -395,9 +396,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(13, 70);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 17);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Nome:";
+            this.label6.Size = new System.Drawing.Size(58, 17);
+            this.label6.TabIndex = 100;
+            this.label6.Text = "Nome: *";
             // 
             // label7
             // 
@@ -407,9 +408,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(13, 130);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 17);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "RA/Matricula:";
+            this.label7.Size = new System.Drawing.Size(99, 17);
+            this.label7.TabIndex = 100;
+            this.label7.Text = "RA/Matricula: *";
             // 
             // cbNivelAcesso
             // 
@@ -431,7 +432,7 @@
             this.cbNivelAcesso.Name = "cbNivelAcesso";
             this.cbNivelAcesso.Padding = new System.Windows.Forms.Padding(1);
             this.cbNivelAcesso.Size = new System.Drawing.Size(200, 30);
-            this.cbNivelAcesso.TabIndex = 14;
+            this.cbNivelAcesso.TabIndex = 5;
             this.cbNivelAcesso.Texts = "";
             // 
             // dgUsuario
@@ -439,12 +440,24 @@
             this.dgUsuario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.dgUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgUsuario.Location = new System.Drawing.Point(9, 130);
+            this.dgUsuario.Location = new System.Drawing.Point(11, 130);
             this.dgUsuario.Name = "dgUsuario";
             this.dgUsuario.RowTemplate.Height = 25;
-            this.dgUsuario.Size = new System.Drawing.Size(850, 334);
+            this.dgUsuario.Size = new System.Drawing.Size(852, 334);
             this.dgUsuario.TabIndex = 13;
             this.dgUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgUsuario_CellClick);
+            // 
+            // label8
+            // 
+            this.label8.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(725, 513);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(145, 17);
+            this.label8.TabIndex = 100;
+            this.label8.Text = "Campos obrigatórios *";
             // 
             // UsuarioView
             // 
@@ -454,6 +467,7 @@
             this.ClientSize = new System.Drawing.Size(875, 539);
             this.Controls.Add(this.dgUsuario);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -515,5 +529,6 @@
         private DataGridView dgUsuario;
         private RJButton btVoltar;
         private Label lbUsuario;
+        private Label label8;
     }
 }

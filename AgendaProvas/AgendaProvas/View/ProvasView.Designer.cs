@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProvasView));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btVoltar = new AgendaProvas.RJButton();
+            this.btLogoff = new AgendaProvas.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dgProvas = new System.Windows.Forms.DataGridView();
             this.btCadastrar = new AgendaProvas.RJButton();
@@ -46,7 +46,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.btVoltar);
+            this.panel1.Controls.Add(this.btLogoff);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -55,25 +55,25 @@
             this.panel1.Size = new System.Drawing.Size(757, 42);
             this.panel1.TabIndex = 1;
             // 
-            // btVoltar
+            // btLogoff
             // 
-            this.btVoltar.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btVoltar.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btVoltar.BackgroundImage")));
-            this.btVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btVoltar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btVoltar.BorderRadius = 30;
-            this.btVoltar.BorderSize = 0;
-            this.btVoltar.FlatAppearance.BorderSize = 0;
-            this.btVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btVoltar.ForeColor = System.Drawing.Color.White;
-            this.btVoltar.Location = new System.Drawing.Point(8, 1);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(40, 41);
-            this.btVoltar.TabIndex = 17;
-            this.btVoltar.TextColor = System.Drawing.Color.White;
-            this.btVoltar.UseVisualStyleBackColor = false;
-            this.btVoltar.Click += new System.EventHandler(this.btVoltar_Click);
+            this.btLogoff.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btLogoff.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btLogoff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btLogoff.BackgroundImage")));
+            this.btLogoff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btLogoff.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btLogoff.BorderRadius = 30;
+            this.btLogoff.BorderSize = 0;
+            this.btLogoff.FlatAppearance.BorderSize = 0;
+            this.btLogoff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLogoff.ForeColor = System.Drawing.Color.White;
+            this.btLogoff.Location = new System.Drawing.Point(707, 0);
+            this.btLogoff.Name = "btLogoff";
+            this.btLogoff.Size = new System.Drawing.Size(40, 41);
+            this.btLogoff.TabIndex = 17;
+            this.btLogoff.TextColor = System.Drawing.Color.White;
+            this.btLogoff.UseVisualStyleBackColor = false;
+            this.btLogoff.Click += new System.EventHandler(this.btLogoff_Click);
             // 
             // label1
             // 
@@ -137,7 +137,7 @@
             this.btAdicionar.ForeColor = System.Drawing.Color.White;
             this.btAdicionar.Location = new System.Drawing.Point(194, 484);
             this.btAdicionar.Name = "btAdicionar";
-            this.btAdicionar.Size = new System.Drawing.Size(108, 40);
+            this.btAdicionar.Size = new System.Drawing.Size(100, 40);
             this.btAdicionar.TabIndex = 5;
             this.btAdicionar.Text = "Adicionar Eventos";
             this.btAdicionar.TextColor = System.Drawing.Color.White;
@@ -157,7 +157,7 @@
             this.btEditar.ForeColor = System.Drawing.Color.White;
             this.btEditar.Location = new System.Drawing.Point(308, 484);
             this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(120, 40);
+            this.btEditar.Size = new System.Drawing.Size(100, 40);
             this.btEditar.TabIndex = 5;
             this.btEditar.Text = "Editar Eventos";
             this.btEditar.TextColor = System.Drawing.Color.White;
@@ -175,9 +175,9 @@
             this.btExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btExcluir.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btExcluir.ForeColor = System.Drawing.Color.White;
-            this.btExcluir.Location = new System.Drawing.Point(434, 484);
+            this.btExcluir.Location = new System.Drawing.Point(420, 484);
             this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(120, 40);
+            this.btExcluir.Size = new System.Drawing.Size(100, 40);
             this.btExcluir.TabIndex = 5;
             this.btExcluir.Text = "Excluir Eventos";
             this.btExcluir.TextColor = System.Drawing.Color.White;
@@ -234,6 +234,7 @@
             this.Controls.Add(this.dgProvas);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MaximizeBox = false;
             this.Name = "ProvasView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eventos";
@@ -254,9 +255,9 @@
         private RJButton btCadastrar;
         private RJButton btAdicionar;
         private RJButton btEditar;
-        private RJButton btVoltar;
         private RJButton btExcluir;
         private Label label6;
         private CustomControls.RJControls.RJTextBox txtPesquisaData;
+        private RJButton btLogoff;
     }
 }

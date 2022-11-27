@@ -44,7 +44,7 @@ namespace AgendaProvas.Dao
                 //Fechar a conexão
                 Conn.conexao.Close();
 
-                MessageBox.Show("Cadastro realizado com sucesso!");
+                MessageBox.Show("Cadastro realizado com sucesso!","Cadastro",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {

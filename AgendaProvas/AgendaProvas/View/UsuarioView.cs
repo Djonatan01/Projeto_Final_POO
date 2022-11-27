@@ -25,40 +25,71 @@ namespace AgendaProvas
             InitializeComponent();
             menuCadastrar_Click();
         }
+        private bool verificaCampos()
+        {
+            bool resultado = true;
+            if (String.IsNullOrEmpty(txtNome.Texts) ||
+                String.IsNullOrEmpty(txtMatricula.Texts)||
+                String.IsNullOrEmpty(txtEmail.Texts)||
+                String.IsNullOrEmpty(txtSenha.Texts)||
+                String.IsNullOrEmpty(cbNivelAcesso.Texts)||
+                String.IsNullOrEmpty(cbCurso.Texts))
+            {
+                resultado = false;
+            }
+            return resultado;
+        }
         private void btcadastrar_Click(object sender, EventArgs e)
         {
-            Usuario obj = new Usuario();
-            obj.Nome = txtNome.Texts;
-            obj.Email = txtEmail.Texts;
-            obj.Senha = txtEmail.Texts;
-            obj.Matricula = Convert.ToInt32(txtMatricula.Texts);
-            obj.Tipo = cbNivelAcesso.Texts;
-            obj.Periodo = cbPeriodo.Texts;
-            obj.Curso = cbCurso.Texts;
+            if (verificaCampos())
+            {
+                Usuario obj = new Usuario();
+                obj.Nome = txtNome.Texts;
+                obj.Email = txtEmail.Texts;
+                obj.Senha = txtSenha.Texts;
+                obj.Matricula = txtMatricula.Texts;
+                obj.Tipo = cbNivelAcesso.Texts;
+                obj.Periodo = cbPeriodo.Texts;
+                obj.Curso = cbCurso.Texts;
 
-            UsuarioDao dao = new UsuarioDao();
+                UsuarioDao dao = new UsuarioDao();
 
-            dao.cadastrarUsuario(obj);
+                dao.cadastrarUsuario(obj);
 
+                LimparForm();
+            }
+            else
+            {
+                MessageBox.Show("Todos os campos obrigatórios devem ser preechidos","Campos vazios",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
-
+        #region botão editar
         private void btAlterar_Click(object sender, EventArgs e)
         {
-            Usuario obj = new Usuario();
-            obj.Id = id;
-            obj.Nome = txtNome.Texts;
-            obj.Email = txtEmail.Texts;
-            obj.Senha = txtSenha.Texts;
-            obj.Matricula = Convert.ToInt32(txtMatricula.Texts);
-            obj.Tipo = cbNivelAcesso.Texts;
-            obj.Periodo = cbPeriodo.Texts;
-            obj.Curso = cbCurso.Texts;
-            UsuarioDao dao = new UsuarioDao();
+            DialogResult resposta = MessageBox.Show("Deseja realmente alterar?", "Alteração", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta.ToString().Equals("Yes"))
+            {
+                if (verificaCampos())
+                {
+                    Usuario obj = new Usuario();
+                    obj.Id = id;
+                    obj.Nome = txtNome.Texts;
+                    obj.Email = txtEmail.Texts;
+                    obj.Senha = txtSenha.Texts;
+                    obj.Matricula = txtMatricula.Texts;
+                    obj.Tipo = cbNivelAcesso.Texts;
+                    obj.Periodo = cbPeriodo.Texts;
+                    obj.Curso = cbCurso.Texts;
+                    UsuarioDao dao = new UsuarioDao();
 
-            dao.alterarUsuario(obj);
-            //Limpar os campos 
-            LimparForm();
+                    dao.alterarUsuario(obj);
+                    //Limpar os campos 
+                    LimparForm();
+                }
+            }
         }
+        #endregion
+
         public void LimparForm()
         {
             txtNome.Texts = "";
@@ -134,26 +165,30 @@ namespace AgendaProvas
             cbCurso.Texts = dgUsuario.CurrentRow.Cells[7].Value.ToString();
             menuCadastrar_Click();
         }
-
+        #region botão excluir usuários
         private void btExcluir_Click(object sender, EventArgs e)
         {
-            Usuario obj = new Usuario();
+            DialogResult resposta = MessageBox.Show("Deseja realmente Exluir?", "Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resposta.ToString().Equals("Yes"))
+            {
+                Usuario obj = new Usuario();
 
-            obj.Id = id;
+                obj.Id = id;
 
-            UsuarioDao dao = new UsuarioDao();
-            dao.excluirUsuario(obj);
+                UsuarioDao dao = new UsuarioDao();
+                dao.excluirUsuario(obj);
 
-            //Limpar os campos 
-            LimparForm();
+                //Limpar os campos 
+                LimparForm();
+            }
         }
-
+        #endregion
         private void txtMatricula_KeyPress(object sender, KeyPressEventArgs e)
         {
             
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) e.Handled = true;
 
-            if (txtMatricula.Texts.Length + 1 >= 14) e.Handled = true; 
+            if (txtMatricula.Texts.Length + 1 >= 13) e.Handled = true; 
 
         }
 
