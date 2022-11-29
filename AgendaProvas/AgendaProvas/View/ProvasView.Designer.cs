@@ -119,7 +119,7 @@
             this.btCadastrar.Name = "btCadastrar";
             this.btCadastrar.Size = new System.Drawing.Size(120, 40);
             this.btCadastrar.TabIndex = 5;
-            this.btCadastrar.Text = "Gerenciar Alunos";
+            this.btCadastrar.Text = "Gerenciar Usuários";
             this.btCadastrar.TextColor = System.Drawing.Color.White;
             this.btCadastrar.UseVisualStyleBackColor = false;
             this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
