@@ -252,7 +252,7 @@
         private Panel panel1;
         private Label label1;
         private DataGridView dgProvas;
-        private RJButton btCadastrar;
+        public RJButton btCadastrar;
         private RJButton btAdicionar;
         private RJButton btEditar;
         private RJButton btExcluir;

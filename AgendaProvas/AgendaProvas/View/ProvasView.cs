@@ -45,6 +45,7 @@ namespace AgendaProvas.View
 
             this.Hide();
         }
+
         #region botão exluir
         private void btExcluir_Click(object sender, EventArgs e)
         {
@@ -86,6 +87,8 @@ namespace AgendaProvas.View
             }
         }
         #endregion
+
+        #region botão adicionar
         private void btAdicionar_Click(object sender, EventArgs e)
         {
             CadastrarEventosView cadEvento = new CadastrarEventosView();
@@ -94,6 +97,8 @@ namespace AgendaProvas.View
 
             this.Hide();
         }
+        #endregion
+
         #region Ocultar botões aluno
         public void aluno(string tipoCurso)
         {
@@ -107,11 +112,17 @@ namespace AgendaProvas.View
             btExcluir.Visible = false;
         }
         #endregion
+
+        #region Ocultar botões professor
         public void professor()
         {
-            //retCurso = "";
+            CadastrarEventosView obj = new CadastrarEventosView();
+            obj.check = 0;
             btCadastrar.Visible = false;
         }
+
+        #endregion
+
         #region Filtrar por disciplina / curso
         private void txtPesquisaData__TextChanged(object sender, EventArgs e)
         {

@@ -117,7 +117,9 @@ namespace AgendaProvas
             txtSenha.Visible = true;
             cbNivelAcesso.Visible = true;
             cbPeriodo.Visible = true;
-            cbCurso.Visible = true;
+            cbCurso.Visible = true;  
+            
+
         }
         private void menuConsultar_Click(object sender, EventArgs e)
         {
@@ -143,6 +145,7 @@ namespace AgendaProvas
             cbCurso.Visible = false;
             txtMatricula.Texts = "";
             txtNome.Texts = "";
+            LimparForm();
         }
         private void Cadastro_Load(object sender, EventArgs e)
         {

@@ -49,6 +49,7 @@
             this.txtMhora = new System.Windows.Forms.MaskedTextBox();
             this.txtDiscciplina = new CustomControls.RJControls.RJTextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,9 +126,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 15);
+            this.label1.Size = new System.Drawing.Size(54, 15);
             this.label1.TabIndex = 100;
-            this.label1.Text = "Evento:";
+            this.label1.Text = "Evento: *";
             // 
             // txtHora
             // 
@@ -159,9 +160,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(153, 191);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 15);
+            this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 100;
-            this.label3.Text = "Hora:";
+            this.label3.Text = "Hora: *";
             // 
             // label4
             // 
@@ -170,9 +171,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(312, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 15);
+            this.label4.Size = new System.Drawing.Size(62, 15);
             this.label4.TabIndex = 100;
-            this.label4.Text = "Periodo:";
+            this.label4.Text = "Periodo: * ";
             // 
             // label5
             // 
@@ -181,9 +182,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(13, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 15);
+            this.label5.Size = new System.Drawing.Size(43, 15);
             this.label5.TabIndex = 100;
-            this.label5.Text = "Data:";
+            this.label5.Text = "Data: *";
             // 
             // btCadastraEvento
             // 
@@ -196,7 +197,7 @@
             this.btCadastraEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCadastraEvento.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btCadastraEvento.ForeColor = System.Drawing.Color.White;
-            this.btCadastraEvento.Location = new System.Drawing.Point(233, 298);
+            this.btCadastraEvento.Location = new System.Drawing.Point(211, 296);
             this.btCadastraEvento.Name = "btCadastraEvento";
             this.btCadastraEvento.Size = new System.Drawing.Size(88, 40);
             this.btCadastraEvento.TabIndex = 7;
@@ -235,9 +236,9 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(312, 134);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 17);
+            this.label7.Size = new System.Drawing.Size(56, 17);
             this.label7.TabIndex = 100;
-            this.label7.Text = "Curso:";
+            this.label7.Text = "Curso: *";
             // 
             // cbPeriodo
             // 
@@ -263,7 +264,7 @@
             this.cbPeriodo.Name = "cbPeriodo";
             this.cbPeriodo.Padding = new System.Windows.Forms.Padding(1);
             this.cbPeriodo.Size = new System.Drawing.Size(200, 30);
-            this.cbPeriodo.TabIndex = 4;
+            this.cbPeriodo.TabIndex = 5;
             this.cbPeriodo.Texts = "";
             // 
             // cbCurso
@@ -287,7 +288,7 @@
             this.cbCurso.Name = "cbCurso";
             this.cbCurso.Padding = new System.Windows.Forms.Padding(1);
             this.cbCurso.Size = new System.Drawing.Size(200, 30);
-            this.cbCurso.TabIndex = 5;
+            this.cbCurso.TabIndex = 6;
             this.cbCurso.Texts = "";
             // 
             // cbSala
@@ -315,7 +316,7 @@
             this.cbSala.Name = "cbSala";
             this.cbSala.Padding = new System.Windows.Forms.Padding(1);
             this.cbSala.Size = new System.Drawing.Size(200, 30);
-            this.cbSala.TabIndex = 6;
+            this.cbSala.TabIndex = 7;
             this.cbSala.Texts = "";
             // 
             // label2
@@ -325,9 +326,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(312, 190);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 17);
+            this.label2.Size = new System.Drawing.Size(128, 17);
             this.label2.TabIndex = 100;
-            this.label2.Text = "Sala / Laboratório:";
+            this.label2.Text = "Sala / Laboratório: *";
             // 
             // txtMdata
             // 
@@ -339,7 +340,7 @@
             this.txtMdata.Mask = "00/00/0000";
             this.txtMdata.Name = "txtMdata";
             this.txtMdata.Size = new System.Drawing.Size(80, 19);
-            this.txtMdata.TabIndex = 2;
+            this.txtMdata.TabIndex = 3;
             this.txtMdata.ValidatingType = typeof(System.DateTime);
             // 
             // txtMhora
@@ -352,7 +353,7 @@
             this.txtMhora.Mask = "00:00";
             this.txtMhora.Name = "txtMhora";
             this.txtMhora.Size = new System.Drawing.Size(59, 19);
-            this.txtMhora.TabIndex = 3;
+            this.txtMhora.TabIndex = 4;
             this.txtMhora.ValidatingType = typeof(System.DateTime);
             // 
             // txtDiscciplina
@@ -373,7 +374,7 @@
             this.txtDiscciplina.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtDiscciplina.PlaceholderText = "";
             this.txtDiscciplina.Size = new System.Drawing.Size(250, 31);
-            this.txtDiscciplina.TabIndex = 1;
+            this.txtDiscciplina.TabIndex = 2;
             this.txtDiscciplina.Texts = "";
             this.txtDiscciplina.UnderlinedStyle = false;
             // 
@@ -384,9 +385,21 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(13, 136);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 15);
+            this.label8.Size = new System.Drawing.Size(70, 15);
             this.label8.TabIndex = 100;
-            this.label8.Text = "Disciplina:";
+            this.label8.Text = "Disciplina: *";
+            // 
+            // label9
+            // 
+            this.label9.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(383, 332);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(145, 17);
+            this.label9.TabIndex = 101;
+            this.label9.Text = "Campos obrigatórios *";
             // 
             // CadastrarEventosView
             // 
@@ -394,6 +407,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(540, 358);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.txtMhora);
             this.Controls.Add(this.txtMdata);
             this.Controls.Add(this.label2);
@@ -445,5 +459,6 @@
         private MaskedTextBox txtMhora;
         private CustomControls.RJControls.RJTextBox txtDiscciplina;
         private Label label8;
+        private Label label9;
     }
 }

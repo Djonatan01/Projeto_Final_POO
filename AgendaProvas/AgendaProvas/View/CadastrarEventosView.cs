@@ -14,6 +14,7 @@ namespace AgendaProvas.View
 {
     public partial class CadastrarEventosView : Form
     {
+        public int check;
         int id = 0;
         public CadastrarEventosView()
         {
@@ -26,9 +27,9 @@ namespace AgendaProvas.View
             if (String.IsNullOrEmpty(txtDiscciplina.Texts) ||
                 String.IsNullOrEmpty(txtEvento.Texts) ||
                 String.IsNullOrEmpty(txtMdata.Text) ||
-                String.IsNullOrEmpty(cbCurso.Text) ||
-                String.IsNullOrEmpty(cbPeriodo.Text) ||
-                String.IsNullOrEmpty(cbSala.Text) ||
+                String.IsNullOrEmpty(cbCurso.Texts) ||
+                String.IsNullOrEmpty(cbPeriodo.Texts) ||
+                String.IsNullOrEmpty(cbSala.Texts) ||
                 String.IsNullOrEmpty(txtMhora.Text))
             {
                 resultado = false;
@@ -37,11 +38,19 @@ namespace AgendaProvas.View
         }
         private void btVoltar_Click(object sender, EventArgs e)
         {
-            ProvasView voltar = new ProvasView();
-
-            voltar.Show();
-
-            this.Hide();
+            if (check == 0)
+            {
+                ProvasView voltar = new ProvasView();
+                voltar.Show();
+                voltar.btCadastrar.Visible = false;
+                this.Hide();
+            }
+            else
+            {
+                ProvasView voltar = new ProvasView();
+                voltar.Show();
+                this.Hide();
+            }
         }
 
         private void CadastrarEventosView_FormClosing(object sender, FormClosingEventArgs e)
@@ -77,21 +86,43 @@ namespace AgendaProvas.View
                 obj.Sala = cbSala.Texts;
 
                 EventoDao dao = new EventoDao();
-                if (id == 0)
+                if (check == 0)
                 {
-                    dao.cadastrarEvento(obj);
-                    ProvasView retonar = new ProvasView();
-                    retonar.Show();
-                    this.Hide();
+                    if (id == 0)
+                    {
+                        dao.cadastrarEvento(obj);
+                        ProvasView retonar = new ProvasView();
+                        retonar.btCadastrar.Visible = false;
+                        retonar.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        obj.Id = Convert.ToString(id);
+                        dao.alterarEvento(obj);
+                        ProvasView retonar = new ProvasView();
+                        retonar.btCadastrar.Visible = false;
+                        retonar.Show();
+                        this.Hide();
+                    }
                 }
                 else
                 {
-                    obj.Id = Convert.ToString(id);
-                    dao.alterarEvento(obj);
-
-                    ProvasView retonar = new ProvasView();
-                    retonar.Show();
-                    this.Hide();
+                    if (id == 0)
+                    {
+                        dao.cadastrarEvento(obj);
+                        ProvasView retonar = new ProvasView();
+                        retonar.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        obj.Id = Convert.ToString(id);
+                        dao.alterarEvento(obj);
+                        ProvasView retonar = new ProvasView();
+                        retonar.Show();
+                        this.Hide();
+                    }
                 }
             }
             else
