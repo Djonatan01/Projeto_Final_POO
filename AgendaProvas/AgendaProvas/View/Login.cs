@@ -31,13 +31,14 @@ namespace AgendaProvas
                     check = retorno.Split('/');
 
                     ProvasView prov = new ProvasView();
+                  
 
                     switch (check[0])
-                    {
-                        
+                    {                        
                         case "0":
                             prov.Show();
                             this.Hide();
+                            prov.admin();
                             break;
 
                         case "1":
@@ -48,7 +49,7 @@ namespace AgendaProvas
                         case "3":
                             prov.Show();
                             this.Hide();
-                            prov.professor();
+                            prov.professor();                           
                             break;
                         default:
                             MessageBox.Show("Email e/ou Senha inválidos ",

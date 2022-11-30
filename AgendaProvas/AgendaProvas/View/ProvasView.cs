@@ -115,10 +115,19 @@ namespace AgendaProvas.View
 
         #region Ocultar botões professor
         public void professor()
-        {
-            CadastrarEventosView obj = new CadastrarEventosView();
-            obj.check = 0;
-            btCadastrar.Visible = false;
+        {           
+          btCadastrar.Visible = false; 
+            
+        }
+
+        #endregion
+
+        #region Ocultar botões professor
+        public void admin()
+        {           
+            btAdicionar.Visible = false;
+            btEditar.Visible = false;
+            btExcluir.Visible = false;
         }
 
         #endregion

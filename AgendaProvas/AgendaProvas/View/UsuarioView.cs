@@ -200,7 +200,7 @@ namespace AgendaProvas
             ProvasView voltar = new ProvasView();
 
             voltar.Show();
-
+            voltar.admin();
             this.Hide();
         }
 

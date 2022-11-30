@@ -14,8 +14,9 @@ namespace AgendaProvas.View
 {
     public partial class CadastrarEventosView : Form
     {
+        
+        public int id;
         public int check;
-        int id = 0;
         public CadastrarEventosView()
         {
             InitializeComponent();
@@ -36,21 +37,14 @@ namespace AgendaProvas.View
             }
             return resultado;
         }
+
+       
         private void btVoltar_Click(object sender, EventArgs e)
         {
-            if (check == 0)
-            {
-                ProvasView voltar = new ProvasView();
-                voltar.Show();
-                voltar.btCadastrar.Visible = false;
-                this.Hide();
-            }
-            else
-            {
-                ProvasView voltar = new ProvasView();
-                voltar.Show();
-                this.Hide();
-            }
+            ProvasView voltar = new ProvasView();
+            voltar.Show();
+            voltar.btCadastrar.Visible = false;
+            this.Hide();
         }
 
         private void CadastrarEventosView_FormClosing(object sender, FormClosingEventArgs e)
